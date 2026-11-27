@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bioluminescence"
+    },
+    {
+      "name": "minigrowth"
+    },
+    {
+      "name": "cyst",
+      "directions": 8
+    },
+    {
+      "name": "eye"
+    },
+    {
+      "name": "harvester"
+    },
+    {
+      "name": "nest"
+    },
+    {
+      "name": "propagator"
+    },
+    {
+      "name": "snare"
+    },
+    {
+      "name": "maw"
+    }
+  ]
+}

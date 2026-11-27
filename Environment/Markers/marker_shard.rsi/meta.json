@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "marker_shard_dormant"
+    },
+    {
+      "name": "marker_shard_active",
+      "delays": [
+        [
+          1.0,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          2.0
+        ]
+      ]
+    }
+  ]
+}

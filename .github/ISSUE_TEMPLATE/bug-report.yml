@@ -1,0 +1,18 @@
+name: Ошибка в ассете
+description: Сообщить о сломанном спрайте, неверной сетке RSI, проблеме со звуком или неканоне
+labels: ["bug"]
+body:
+  - type: input
+    id: path
+    attributes:
+      label: Путь к файлу или RSI-пакету
+      placeholder: Например, Rigs/carver/icons.rsi или Audio/Announcements/...
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Что не так
+      description: Опишите проблему (размер кадра, обрезанный звук, неверный канал Mono/Stereo, посторонний ассет).
+    validations:
+      required: true

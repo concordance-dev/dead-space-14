@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tube",
+      "directions": 4
+    },
+    {
+      "name": "bulb",
+      "directions": 4
+    },
+    {
+      "name": "floor"
+    },
+    {
+      "name": "tube_nightshift",
+      "directions": 4
+    },
+    {
+      "name": "bulb_nightshift",
+      "directions": 4
+    },
+    {
+      "name": "floor_nightshift"
+    },
+    {
+      "name": "tube_emergency",
+      "directions": 4
+    },
+    {
+      "name": "bulb_emergency",
+      "directions": 4
+    },
+    {
+      "name": "floor_emergency"
+    }
+  ]
+}

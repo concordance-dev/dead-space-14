@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "executive_carpet-0"
+    },
+    {
+      "name": "executive_carpet-1"
+    },
+    {
+      "name": "executive_carpet-2"
+    },
+    {
+      "name": "executive_carpet-3"
+    },
+    {
+      "name": "executive_carpet-4"
+    },
+    {
+      "name": "executive_carpet-5"
+    },
+    {
+      "name": "executive_carpet-6"
+    },
+    {
+      "name": "executive_carpet-7"
+    },
+    {
+      "name": "executive_carpet-8"
+    },
+    {
+      "name": "executive_carpet-9"
+    },
+    {
+      "name": "executive_carpet-10"
+    },
+    {
+      "name": "executive_carpet-11"
+    },
+    {
+      "name": "executive_carpet-12"
+    },
+    {
+      "name": "executive_carpet-13"
+    },
+    {
+      "name": "executive_carpet-14"
+    },
+    {
+      "name": "executive_carpet-15"
+    },
+    {
+      "name": "executive_carpet-21"
+    },
+    {
+      "name": "executive_carpet-23"
+    },
+    {
+      "name": "executive_carpet-29"
+    },
+    {
+      "name": "executive_carpet-31"
+    },
+    {
+      "name": "executive_carpet-38"
+    },
+    {
+      "name": "executive_carpet-39"
+    },
+    {
+      "name": "executive_carpet-46"
+    },
+    {
+      "name": "executive_carpet-47"
+    },
+    {
+      "name": "executive_carpet-55"
+    },
+    {
+      "name": "executive_carpet-63"
+    },
+    {
+      "name": "executive_carpet-74"
+    },
+    {
+      "name": "executive_carpet-75"
+    },
+    {
+      "name": "executive_carpet-78"
+    },
+    {
+      "name": "executive_carpet-79"
+    },
+    {
+      "name": "executive_carpet-95"
+    },
+    {
+      "name": "executive_carpet-110"
+    },
+    {
+      "name": "executive_carpet-111"
+    },
+    {
+      "name": "executive_carpet-127"
+    },
+    {
+      "name": "executive_carpet-137"
+    },
+    {
+      "name": "executive_carpet-139"
+    },
+    {
+      "name": "executive_carpet-141"
+    },
+    {
+      "name": "executive_carpet-143"
+    },
+    {
+      "name": "executive_carpet-157"
+    },
+    {
+      "name": "executive_carpet-159"
+    },
+    {
+      "name": "executive_carpet-175"
+    },
+    {
+      "name": "executive_carpet-191"
+    },
+    {
+      "name": "executive_carpet-203"
+    },
+    {
+      "name": "executive_carpet-207"
+    },
+    {
+      "name": "executive_carpet-223"
+    },
+    {
+      "name": "executive_carpet-239"
+    },
+    {
+      "name": "executive_carpet-255"
+    }
+  ]
+}

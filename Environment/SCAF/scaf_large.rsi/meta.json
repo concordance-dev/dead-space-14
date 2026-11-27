@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "scaf_topleft"
+    },
+    {
+      "name": "scaf_topright"
+    },
+    {
+      "name": "scaf_bottonleft"
+    },
+    {
+      "name": "scaf_bottonright"
+    },
+    {
+      "name": "sovereign_left"
+    },
+    {
+      "name": "sovereign_right"
+    },
+    {
+      "name": "sovereign"
+    }
+  ]
+}

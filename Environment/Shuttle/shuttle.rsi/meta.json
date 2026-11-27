@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "doorc0",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "door1"
+    },
+    {
+      "name": "doorc1",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "door0"
+    },
+    {
+      "name": "propulsion_old",
+      "directions": 4
+    },
+    {
+      "name": "burst_l_old",
+      "directions": 4
+    },
+    {
+      "name": "burst_r_old",
+      "directions": 4
+    },
+    {
+      "name": "router_old",
+      "directions": 4
+    },
+    {
+      "name": "platform",
+      "directions": 8
+    },
+    {
+      "name": "heater_old",
+      "directions": 4
+    },
+    {
+      "name": "diagonalWall",
+      "directions": 8
+    },
+    {
+      "name": "wall1"
+    },
+    {
+      "name": "wall2"
+    },
+    {
+      "name": "wall",
+      "directions": 8
+    },
+    {
+      "name": "diagonalWall2"
+    },
+    {
+      "name": "pwall",
+      "directions": 8
+    },
+    {
+      "name": "wall3",
+      "directions": 8
+    },
+    {
+      "name": "diagonalWall3",
+      "directions": 8
+    },
+    {
+      "name": "wall_floor",
+      "directions": 8
+    },
+    {
+      "name": "wall_space",
+      "directions": 8
+    },
+    {
+      "name": "propulsion_r_old",
+      "directions": 4
+    },
+    {
+      "name": "burst_s_old",
+      "directions": 4
+    },
+    {
+      "name": "propulsion_l_old",
+      "directions": 4
+    },
+    {
+      "name": "swall0"
+    },
+    {
+      "name": "swall1"
+    },
+    {
+      "name": "swall2"
+    },
+    {
+      "name": "swall3"
+    },
+    {
+      "name": "swall4"
+    },
+    {
+      "name": "swall7"
+    },
+    {
+      "name": "swall8"
+    },
+    {
+      "name": "swall11"
+    },
+    {
+      "name": "swall12"
+    },
+    {
+      "name": "swall13"
+    },
+    {
+      "name": "swall14"
+    },
+    {
+      "name": "swall15"
+    },
+    {
+      "name": "swall_f5"
+    },
+    {
+      "name": "swall_f6"
+    },
+    {
+      "name": "swall_f9"
+    },
+    {
+      "name": "swall_f10"
+    },
+    {
+      "name": "swall_s5"
+    },
+    {
+      "name": "swall_s6"
+    },
+    {
+      "name": "swall_s9"
+    },
+    {
+      "name": "swall_s10"
+    },
+    {
+      "name": "gwall_space",
+      "directions": 4
+    },
+    {
+      "name": "gwall_floor",
+      "directions": 4
+    },
+    {
+      "name": "swallc1"
+    },
+    {
+      "name": "swallc2"
+    },
+    {
+      "name": "swallc3"
+    },
+    {
+      "name": "swallc4"
+    },
+    {
+      "name": "swall_f11"
+    },
+    {
+      "name": "swall_f12"
+    },
+    {
+      "name": "swall_f13"
+    },
+    {
+      "name": "swall_f14"
+    },
+    {
+      "name": "swall_f15"
+    },
+    {
+      "name": "swall_f16"
+    },
+    {
+      "name": "swall_f17"
+    },
+    {
+      "name": "swall_f18"
+    },
+    {
+      "name": "fwall_open"
+    },
+    {
+      "name": "fwall_opening",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "fwall_closing",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "burst_l",
+      "directions": 4
+    },
+    {
+      "name": "burst_s",
+      "directions": 4
+    },
+    {
+      "name": "burst_r",
+      "directions": 4
+    },
+    {
+      "name": "propulsion_l",
+      "directions": 4
+    },
+    {
+      "name": "propulsion",
+      "directions": 4
+    },
+    {
+      "name": "propulsion_r",
+      "directions": 4
+    },
+    {
+      "name": "router",
+      "directions": 4
+    },
+    {
+      "name": "heater",
+      "directions": 4
+    },
+    {
+      "name": "propulsion_w",
+      "directions": 4
+    }
+  ]
+}

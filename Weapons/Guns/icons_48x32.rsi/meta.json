@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pulserifle_legacy"
+    },
+    {
+      "name": "pulserifle"
+    },
+    {
+      "name": "pulserifle-wielded"
+    },
+    {
+      "name": "pulserifle_egov"
+    },
+    {
+      "name": "pulserifle_egov-wielded"
+    },
+    {
+      "name": "bullpuprifle"
+    },
+    {
+      "name": "forcegun"
+    },
+    {
+      "name": "miscgun"
+    },
+    {
+      "name": "seeker"
+    },
+    {
+      "name": "seeker-wielded"
+    },
+    {
+      "name": "contact"
+    },
+    {
+      "name": "contact_charge",
+      "delays": [
+        [
+          0.26,
+          0.26,
+          0.26,
+          0.26,
+          0.26
+        ]
+      ]
+    },
+    {
+      "name": "linecutter"
+    },
+    {
+      "name": "linecutter_open"
+    },
+    {
+      "name": "heavypulserifle"
+    },
+    {
+      "name": "heavypulserifle-wielded"
+    },
+    {
+      "name": "rivetgun"
+    },
+    {
+      "name": "rivetgun_mag"
+    },
+    {
+      "name": "detonator"
+    },
+    {
+      "name": "detonator_mag"
+    },
+    {
+      "name": "hydetorch"
+    },
+    {
+      "name": "hydetorch_mag"
+    },
+    {
+      "name": "hydetorch_lit",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "plasmacutter"
+    },
+    {
+      "name": "scl_shotgun"
+    },
+    {
+      "name": "scl_shotgun_wielded"
+    },
+    {
+      "name": "scl_shotgun_mag"
+    },
+    {
+      "name": "javelin_p_loaded"
+    },
+    {
+      "name": "javelin_p"
+    },
+    {
+      "name": "javelin"
+    },
+    {
+      "name": "javelin_wielded"
+    },
+    {
+      "name": "javelin_mag"
+    }
+  ]
+}

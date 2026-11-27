@@ -1,0 +1,910 @@
+{
+  "source": "2WbUbwtYpx0",
+  "method": "ffmpeg silencedetect (-35dB, d=0.35)",
+  "total": 129,
+  "files": [
+    {
+      "file": "tram_replacement_ru.ogg",
+      "start_sec": 0.0,
+      "end_sec": 3.87,
+      "duration_sec": 3.97,
+      "transcript": "Замена повреждённой вагонетки. Пожалуйста, ждите."
+    },
+    {
+      "file": "tram_replacement_complete_ru.ogg",
+      "start_sec": 4.84,
+      "end_sec": 6.86,
+      "duration_sec": 2.18,
+      "transcript": "Процедура замены завершена."
+    },
+    {
+      "file": "hostile_lifeforms_evacuation_ru.ogg",
+      "start_sec": 7.7,
+      "end_sec": 13.78,
+      "duration_sec": 6.24,
+      "transcript": "Враждебные формы жизни. Корпус повреждён. Срочная эвакуация."
+    },
+    {
+      "file": "hazardous_anomaly_quarantine_ru.ogg",
+      "start_sec": 14.36,
+      "end_sec": 18.56,
+      "duration_sec": 4.36,
+      "transcript": "Обнаружена опасная аномалия. Активирован режим карантина."
+    },
+    {
+      "file": "quarantine_lifted_ru.ogg",
+      "start_sec": 19.32,
+      "end_sec": 21.03,
+      "duration_sec": 1.87,
+      "transcript": "Карантин снят."
+    },
+    {
+      "file": "vacuum_zone_ru.ogg",
+      "start_sec": 22.66,
+      "end_sec": 24.47,
+      "duration_sec": 1.96,
+      "transcript": "Зона вакуума."
+    },
+    {
+      "file": "zero_gravity_zone_ru.ogg",
+      "start_sec": 25.64,
+      "end_sec": 27.72,
+      "duration_sec": 2.24,
+      "transcript": "Зона невесомости."
+    },
+    {
+      "file": "gravity_zone_ru.ogg",
+      "start_sec": 29.0,
+      "end_sec": 31.02,
+      "duration_sec": 2.18,
+      "transcript": "Зона гравитации."
+    },
+    {
+      "file": "normal_pressure_zone_ru.ogg",
+      "start_sec": 32.47,
+      "end_sec": 34.36,
+      "duration_sec": 2.05,
+      "transcript": "Зона нормального давления."
+    },
+    {
+      "file": "refueling_mode_ru.ogg",
+      "start_sec": 35.93,
+      "end_sec": 38.38,
+      "duration_sec": 2.61,
+      "transcript": "Активирован режим дозаправки."
+    },
+    {
+      "file": "refueling_mode_2_ru.ogg",
+      "start_sec": 39.76,
+      "end_sec": 45.2,
+      "duration_sec": 5.59,
+      "transcript": "Активирован режим дозаправки. Топлива достаточно для запуска главного"
+    },
+    {
+      "file": "decontamination_activated_ru.ogg",
+      "start_sec": 46.43,
+      "end_sec": 50.66,
+      "duration_sec": 4.39,
+      "transcript": "Активирован режим обеззараживания. Пожалуйста, ждите."
+    },
+    {
+      "file": "decontamination_complete_ru.ogg",
+      "start_sec": 51.99,
+      "end_sec": 56.35,
+      "duration_sec": 4.52,
+      "transcript": "Обеззараживание завершено. Спасибо за"
+    },
+    {
+      "file": "centrifuge_deactivated_ru.ogg",
+      "start_sec": 58.56,
+      "end_sec": 65.35,
+      "duration_sec": 6.94,
+      "transcript": "Центрифуга деактивирована. Пожалуйста, подключите энергоблоки вручную и попробуйте ещё раз."
+    },
+    {
+      "file": "power_node_connected_ru.ogg",
+      "start_sec": 67.66,
+      "end_sec": 69.88,
+      "duration_sec": 2.38,
+      "transcript": "Энергоблок подключён."
+    },
+    {
+      "file": "power_node_centrifuge_activated_ru.ogg",
+      "start_sec": 71.52,
+      "end_sec": 75.97,
+      "duration_sec": 4.62,
+      "transcript": "подключён. Центрифуга"
+    },
+    {
+      "file": "centrifuge_activated_ru.ogg",
+      "start_sec": 78.26,
+      "end_sec": 87.23,
+      "duration_sec": 9.14,
+      "transcript": "Центрифуга активирована. Восстанавливаю баланс с планетарным грузом. Гравитация в норме. Вхожу в вакуум."
+    },
+    {
+      "file": "ignition_phase_ru.ogg",
+      "start_sec": 89.73,
+      "end_sec": 93.83,
+      "duration_sec": 4.26,
+      "transcript": "Активирована фаза зажигания. Пожалуйста,"
+    },
+    {
+      "file": "engines_ready_ru.ogg",
+      "start_sec": 95.7,
+      "end_sec": 98.92,
+      "duration_sec": 3.38,
+      "transcript": "Двигатели готовы. Подтвердите зажигание."
+    },
+    {
+      "file": "engines_ignition_confirm_ru.ogg",
+      "start_sec": 100.56,
+      "end_sec": 102.27,
+      "duration_sec": 1.86,
+      "transcript": "двигателей."
+    },
+    {
+      "file": "hull_breach_detected_ru.ogg",
+      "start_sec": 103.9,
+      "end_sec": 107.01,
+      "duration_sec": 3.27,
+      "transcript": "Внимание. Зафиксирован пробой."
+    },
+    {
+      "file": "atrium_elevator_enabled_ru.ogg",
+      "start_sec": 108.88,
+      "end_sec": 111.55,
+      "duration_sec": 2.82,
+      "transcript": "Лифт атриума включён."
+    },
+    {
+      "file": "power_directed_to_defense_ru.ogg",
+      "start_sec": 113.72,
+      "end_sec": 116.6,
+      "duration_sec": 3.04,
+      "transcript": "направлена к системам защиты."
+    },
+    {
+      "file": "ads_system_enabled_ru.ogg",
+      "start_sec": 118.22,
+      "end_sec": 121.18,
+      "duration_sec": 3.13,
+      "transcript": "Система метеоритной защиты включена."
+    },
+    {
+      "file": "starboard_impacts_warning_ru.ogg",
+      "start_sec": 122.72,
+      "end_sec": 127.21,
+      "duration_sec": 4.64,
+      "transcript": "Внимание, отмечены множественные удары по правому борту."
+    },
+    {
+      "file": "manual_control_activated_ru.ogg",
+      "start_sec": 128.93,
+      "end_sec": 131.56,
+      "duration_sec": 2.8,
+      "transcript": "Активировано ручное управление."
+    },
+    {
+      "file": "hull_integrity_warning_ru.ogg",
+      "start_sec": 133.74,
+      "end_sec": 136.89,
+      "duration_sec": 3.31,
+      "transcript": "Внимание, целостность корпуса"
+    },
+    {
+      "file": "autotargeting_enabled_ru.ogg",
+      "start_sec": 139.06,
+      "end_sec": 141.69,
+      "duration_sec": 2.79,
+      "transcript": "Система автонаведения включена."
+    },
+    {
+      "file": "processing_request_ru.ogg",
+      "start_sec": 143.59,
+      "end_sec": 147.24,
+      "duration_sec": 3.81,
+      "transcript": "Обработка запроса. Пожалуйста, ждите."
+    },
+    {
+      "file": "antigen_synthesis_complete_ru.ogg",
+      "start_sec": 148.79,
+      "end_sec": 153.36,
+      "duration_sec": 4.74,
+      "transcript": "Синтез антигена завершён. Пожалуйста, заберите капсулу."
+    },
+    {
+      "file": "sample_9797_mix_required_ru.ogg",
+      "start_sec": 155.82,
+      "end_sec": 162.25,
+      "duration_sec": 6.59,
+      "transcript": "Добавляю образец 9797 к остальным Требуется перемешивание."
+    },
+    {
+      "file": "cryo_cycle_activated_ru.ogg",
+      "start_sec": 164.33,
+      "end_sec": 166.66,
+      "duration_sec": 2.49,
+      "transcript": "Цикл заморозки активирован."
+    },
+    {
+      "file": "cryo_cycle_complete_ru.ogg",
+      "start_sec": 169.37,
+      "end_sec": 173.4,
+      "duration_sec": 4.18,
+      "transcript": "Цикл заморозки завершён. Транспортирую"
+    },
+    {
+      "file": "irrigation_mode_enabled_ru.ogg",
+      "start_sec": 175.68,
+      "end_sec": 178.11,
+      "duration_sec": 2.58,
+      "transcript": "Включён режим полива."
+    },
+    {
+      "file": "toxin_detected_air_processing_ru.ogg",
+      "start_sec": 180.3,
+      "end_sec": 186.8,
+      "duration_sec": 6.66,
+      "transcript": "Внимание, в отсеке переработки воздуха замечен токсин. Ремонтная бригада"
+    },
+    {
+      "file": "air_filtration_active_ru.ogg",
+      "start_sec": 190.02,
+      "end_sec": 197.84,
+      "duration_sec": 7.98,
+      "transcript": "Внимание, система фильтрации воздуха активна. Проникновение в фильтрационную трубу чрезвычайно опасно."
+    },
+    {
+      "file": "food_storage_10kt_mass_ru.ogg",
+      "start_sec": 200.63,
+      "end_sec": 205.34,
+      "duration_sec": 4.87,
+      "transcript": "Внимание, на продуктовом складе обнаружена масса в 10 килотонн."
+    },
+    {
+      "file": "east_growery_anomaly_ru.ogg",
+      "start_sec": 208.09,
+      "end_sec": 212.47,
+      "duration_sec": 4.54,
+      "transcript": "В восточной теплице обнаружена растительная аномалия."
+    },
+    {
+      "file": "ventilation_purge_o2_restored_ru.ogg",
+      "start_sec": 215.04,
+      "end_sec": 222.72,
+      "duration_sec": 7.84,
+      "transcript": "Продувка вентиляционной системы. Восстановление уровня кислорода и азота. Продуктовый склад открыт."
+    },
+    {
+      "file": "unknown_antigen_injected_ru.ogg",
+      "start_sec": 225.83,
+      "end_sec": 229.66,
+      "duration_sec": 3.99,
+      "transcript": "Неизвестный антиген введён в фильтрационную систему."
+    },
+    {
+      "file": "restore_gravity_reminder_ru.ogg",
+      "start_sec": 232.75,
+      "end_sec": 238.81,
+      "duration_sec": 6.22,
+      "transcript": "Напоминание, перед входом в комнату контроля восстановите уровень гравитации. Спасибо."
+    },
+    {
+      "file": "anomaly_destroyed_ru.ogg",
+      "start_sec": 241.81,
+      "end_sec": 243.72,
+      "duration_sec": 2.07,
+      "transcript": "Аномалия уничтожена."
+    },
+    {
+      "file": "unsecured_anomalies_cleared_ru.ogg",
+      "start_sec": 245.78,
+      "end_sec": 250.74,
+      "duration_sec": 5.11,
+      "transcript": "Все незакреплённые аномалии уничтожены. Гравитация может быть восстановлена."
+    },
+    {
+      "file": "gravity_restored_ru.ogg",
+      "start_sec": 252.86,
+      "end_sec": 257.21,
+      "duration_sec": 4.51,
+      "transcript": "Гравитация восстановлена. Доступ в комнату контроля разрешён."
+    },
+    {
+      "file": "recycle_waste_reminder_ru.ogg",
+      "start_sec": 260.61,
+      "end_sec": 265.35,
+      "duration_sec": 4.9,
+      "transcript": "Пожалуйста, не забывайте своевременно перерабатывать отходы. Спасибо."
+    },
+    {
+      "file": "keep_rig_sealed_class_a_ru.ogg",
+      "start_sec": 267.89,
+      "end_sec": 272.46,
+      "duration_sec": 4.73,
+      "transcript": "Внимание: не снимайте защитный костюм в среде класса А."
+    },
+    {
+      "file": "cargo_8772_unsecured_ru.ogg",
+      "start_sec": 275.41,
+      "end_sec": 284.36,
+      "duration_sec": 9.11,
+      "transcript": "Предупреждение: груз 8772 освобождён от захватов. Необученный персонал должен покинуть отсек"
+    },
+    {
+      "file": "cargo_8772_launched_ru.ogg",
+      "start_sec": 287.29,
+      "end_sec": 290.33,
+      "duration_sec": 3.2,
+      "transcript": "Груз 8772"
+    },
+    {
+      "file": "lunch_notice_ru.ogg",
+      "start_sec": 293.42,
+      "end_sec": 296.7,
+      "duration_sec": 3.43,
+      "transcript": "Обед будет подан в столовой через 10"
+    },
+    {
+      "file": "comms_array_offline_ru.ogg",
+      "start_sec": 298.99,
+      "end_sec": 304.36,
+      "duration_sec": 5.54,
+      "transcript": "Коммуникационный луч отключён. Ремонтная бригада извещена."
+    },
+    {
+      "file": "comms_array_realigned_ru.ogg",
+      "start_sec": 307.2,
+      "end_sec": 311.82,
+      "duration_sec": 4.77,
+      "transcript": "Коммуникационный луч перенацелен. Возможен приём сообщений."
+    },
+    {
+      "file": "manual_control_activated_2_ru.ogg",
+      "start_sec": 315.71,
+      "end_sec": 318.22,
+      "duration_sec": 2.67,
+      "transcript": "Включено ручное управление."
+    },
+    {
+      "file": "comms_blastdoor_open_ru.ogg",
+      "start_sec": 320.84,
+      "end_sec": 323.73,
+      "duration_sec": 3.06,
+      "transcript": "Взрывоустойчивый шлюз связи открыт."
+    },
+    {
+      "file": "radiation_hazard_lockdown_ru.ogg",
+      "start_sec": 326.11,
+      "end_sec": 331.01,
+      "duration_sec": 5.06,
+      "transcript": "Тревога. Опасный уровень радиации. Аварийные замки включены."
+    },
+    {
+      "file": "radiation_cleared_ru.ogg",
+      "start_sec": 335.5,
+      "end_sec": 338.09,
+      "duration_sec": 2.74,
+      "transcript": "Радиоактивные материалы удалены."
+    },
+    {
+      "file": "radiation_alarm_off_ru.ogg",
+      "start_sec": 341.05,
+      "end_sec": 344.65,
+      "duration_sec": 3.76,
+      "transcript": "Радиационная тревога отключена. Замки"
+    },
+    {
+      "file": "engine_power_failure_ru.ogg",
+      "start_sec": 348.49,
+      "end_sec": 350.62,
+      "duration_sec": 2.3,
+      "transcript": "Сбой питания двигателей."
+    },
+    {
+      "file": "lockdown_initiated_ru.ogg",
+      "start_sec": 353.12,
+      "end_sec": 355.09,
+      "duration_sec": 2.13,
+      "transcript": "Запуск блокировки."
+    },
+    {
+      "file": "lockdown_lifted_ru.ogg",
+      "start_sec": 357.14,
+      "end_sec": 359.0,
+      "duration_sec": 2.02,
+      "transcript": "Блокировка снята."
+    },
+    {
+      "file": "fuel_bay_critical_failure_ru.ogg",
+      "start_sec": 363.12,
+      "end_sec": 368.34,
+      "duration_sec": 5.38,
+      "transcript": "Внимание, критическая поломка в топливном отсеке. Немедленно покиньте"
+    },
+    {
+      "file": "life_support_climate_failure_ru.ogg",
+      "start_sec": 372.09,
+      "end_sec": 379.01,
+      "duration_sec": 7.08,
+      "transcript": "Сбой систем жизнеобеспечения и контроля климата. Опасно для жизни. Пожалуйста, вызовите ремонтников."
+    },
+    {
+      "file": "rewards_unlocked_ru.ogg",
+      "start_sec": 381.2,
+      "end_sec": 384.67,
+      "duration_sec": 3.63,
+      "transcript": "Поздравляем, вы открыли раздел наград."
+    },
+    {
+      "file": "shuttle_test_fire_ru.ogg",
+      "start_sec": 387.4,
+      "end_sec": 389.75,
+      "duration_sec": 2.51,
+      "transcript": "Пробный запуск двигателя челнока."
+    },
+    {
+      "file": "shuttle_clamps_released_ru.ogg",
+      "start_sec": 392.66,
+      "end_sec": 394.82,
+      "duration_sec": 2.32,
+      "transcript": "Замки челнока отключены."
+    },
+    {
+      "file": "object_782_kinesis_required_ru.ogg",
+      "start_sec": 397.59,
+      "end_sec": 404.44,
+      "duration_sec": 7.01,
+      "transcript": "Доставка объекта 782. Необходим кинетический модуль для дальнейшей транспортировки."
+    },
+    {
+      "file": "object_782_delivery_ru.ogg",
+      "start_sec": 406.85,
+      "end_sec": 411.48,
+      "duration_sec": 4.79,
+      "transcript": "Идёт доставка объекта 782 в отсек"
+    },
+    {
+      "file": "object_782_loading_ru.ogg",
+      "start_sec": 413.68,
+      "end_sec": 417.0,
+      "duration_sec": 3.48,
+      "transcript": "Идёт погрузка объекта 782."
+    },
+    {
+      "file": "tram_system_initialized_ru.ogg",
+      "start_sec": 421.49,
+      "end_sec": 428.99,
+      "duration_sec": 7.66,
+      "transcript": "Инициализация транспортной системы. Система инициализирована. Вагонетка на причальной палубе."
+    },
+    {
+      "file": "holomovie_notice_ru.ogg",
+      "start_sec": 431.68,
+      "end_sec": 435.09,
+      "duration_sec": 3.57,
+      "transcript": "Голофильм начнётся в кают-компании через 10 минут."
+    },
+    {
+      "file": "colony_cargo_suspended_ru.ogg",
+      "start_sec": 438.92,
+      "end_sec": 446.63,
+      "duration_sec": 7.87,
+      "transcript": "Грузоперевозки между колонией и кораблём временно приостановлены. За подробностями обратитесь к руководству."
+    },
+    {
+      "file": "decontamination_activated_2_ru.ogg",
+      "start_sec": 449.68,
+      "end_sec": 452.25,
+      "duration_sec": 2.73,
+      "transcript": "Активирован режим обеззараживания."
+    },
+    {
+      "file": "breakfast_notice_ru.ogg",
+      "start_sec": 455.29,
+      "end_sec": 458.31,
+      "duration_sec": 3.18,
+      "transcript": "Завтрак будет подан в столовой через 10"
+    },
+    {
+      "file": "coolant_tank_replacement_ru.ogg",
+      "start_sec": 463.33,
+      "end_sec": 465.76,
+      "duration_sec": 2.59,
+      "transcript": "Замена питающей цистерны."
+    },
+    {
+      "file": "escape_pod_usg09_launched_ru.ogg",
+      "start_sec": 469.25,
+      "end_sec": 476.19,
+      "duration_sec": 7.09,
+      "transcript": "Запущена капсула челнока USG 09. Повторяю, челнок выпустил капсулу."
+    },
+    {
+      "file": "tram_computer_online_ru.ogg",
+      "start_sec": 481.91,
+      "end_sec": 484.67,
+      "duration_sec": 2.93,
+      "transcript": "Компьютер транспортной системы включён."
+    },
+    {
+      "file": "objects_detected_clear_room_ru.ogg",
+      "start_sec": 487.86,
+      "end_sec": 494.55,
+      "duration_sec": 6.85,
+      "transcript": "Предупреждение. Обнаружены объекты. Перед восстановлением гравитации необходима очистка."
+    },
+    {
+      "file": "hull_integrity_below_50_ru.ogg",
+      "start_sec": 497.85,
+      "end_sec": 501.68,
+      "duration_sec": 3.98,
+      "transcript": "Внимание. Целостность корпуса ниже 50%."
+    },
+    {
+      "file": "medical_deck_life_support_fail_ru.ogg",
+      "start_sec": 504.49,
+      "end_sec": 510.06,
+      "duration_sec": 5.73,
+      "transcript": "Тревога. Отказ систем жизнеобеспечения на медицинской палубе. Срочная"
+    },
+    {
+      "file": "processing_request_2_ru.ogg",
+      "start_sec": 513.64,
+      "end_sec": 516.98,
+      "duration_sec": 3.5,
+      "transcript": "Обработка запроса. Пожалуйста, ждите."
+    },
+    {
+      "file": "mixing_complete_collect_capsule_ru.ogg",
+      "start_sec": 517.55,
+      "end_sec": 521.72,
+      "duration_sec": 4.33,
+      "transcript": "Перемешивание завершено. Пожалуйста, заберите капсулу."
+    },
+    {
+      "file": "executive_deck_clearance_ru.ogg",
+      "start_sec": 524.83,
+      "end_sec": 530.59,
+      "duration_sec": 5.92,
+      "transcript": "Напоминание. Только персонал класса C допускается в отсеке дирекции."
+    },
+    {
+      "file": "main_hangar_breach_ru.ogg",
+      "start_sec": 533.17,
+      "end_sec": 539.18,
+      "duration_sec": 6.18,
+      "transcript": "Тревога. Повреждение секции главного ангара. Аварийные службы"
+    },
+    {
+      "file": "quarantine_biohazard_security_ru.ogg",
+      "start_sec": 542.04,
+      "end_sec": 550.85,
+      "duration_sec": 8.97,
+      "transcript": "Внимание. Запущена процедура карантина. В отсеке обнаружена неизвестная форма жизни. Служба безопасности извещена."
+    },
+    {
+      "file": "diagnostic_scanner_on_ru.ogg",
+      "start_sec": 553.94,
+      "end_sec": 556.57,
+      "duration_sec": 2.79,
+      "transcript": "Диагностический сканер включён."
+    },
+    {
+      "file": "store_welcome_isaac_ru.ogg",
+      "start_sec": 558.9,
+      "end_sec": 560.98,
+      "duration_sec": 2.24,
+      "transcript": "Добро пожаловать, Айзек Кларк."
+    },
+    {
+      "file": "store_item_purchased_ru.ogg",
+      "start_sec": 562.11,
+      "end_sec": 563.92,
+      "duration_sec": 1.97,
+      "transcript": "Предмет куплен."
+    },
+    {
+      "file": "store_item_sold_ru.ogg",
+      "start_sec": 564.9,
+      "end_sec": 566.49,
+      "duration_sec": 1.75,
+      "transcript": "Предмет продан."
+    },
+    {
+      "file": "store_item_stored_ru.ogg",
+      "start_sec": 567.87,
+      "end_sec": 569.64,
+      "duration_sec": 1.93,
+      "transcript": "Предмет перенесён."
+    },
+    {
+      "file": "store_error_ru.ogg",
+      "start_sec": 570.43,
+      "end_sec": 571.43,
+      "duration_sec": 1.16,
+      "transcript": "Ошибка."
+    },
+    {
+      "file": "store_schematic_uploaded_ru.ogg",
+      "start_sec": 572.24,
+      "end_sec": 577.99,
+      "duration_sec": 5.91,
+      "transcript": "Схема загружена. Пожалуйста, посетите магазин компании для покупки нового"
+    },
+    {
+      "file": "orbit_shift_engine_off_ru.ogg",
+      "start_sec": 578.84,
+      "end_sec": 583.65,
+      "duration_sec": 4.96,
+      "transcript": "Внимание, изменение орбиты корабля. Главный двигатель деактивирован."
+    },
+    {
+      "file": "fuel_depleted_engine_off_ru.ogg",
+      "start_sec": 584.48,
+      "end_sec": 589.58,
+      "duration_sec": 5.27,
+      "transcript": "Внимание, запасы горючего истощены. Главный двигатель деактивирован."
+    },
+    {
+      "file": "rig_sync_frequency_notice_ru.ogg",
+      "start_sec": 590.61,
+      "end_sec": 597.26,
+      "duration_sec": 6.81,
+      "transcript": "Помните, все иксы должны быть синхронизированы на стандартную частоту корпорации CEC. Спасибо."
+    },
+    {
+      "file": "fuel_bay_critical_failure_2_ru.ogg",
+      "start_sec": 598.09,
+      "end_sec": 603.8,
+      "duration_sec": 5.88,
+      "transcript": "Внимание, взрыв в топливном отсеке. Служба спасения была поставлена в"
+    },
+    {
+      "file": "gravity_system_online_ru.ogg",
+      "start_sec": 605.11,
+      "end_sec": 607.38,
+      "duration_sec": 2.44,
+      "transcript": "Система гравитации включена."
+    },
+    {
+      "file": "airlock_doors_jammed_ru.ogg",
+      "start_sec": 608.38,
+      "end_sec": 613.28,
+      "duration_sec": 5.06,
+      "transcript": "Ошибка, створы шлюза заблокированы. Свяжитесь с ремонтной командой."
+    },
+    {
+      "file": "life_support_compartment_fail_ru.ogg",
+      "start_sec": 614.24,
+      "end_sec": 618.84,
+      "duration_sec": 4.76,
+      "transcript": "Отказ системы жизнеобеспечения в отсеке. Известите старшего техника."
+    },
+    {
+      "file": "resource_waste_report_ru.ogg",
+      "start_sec": 619.86,
+      "end_sec": 625.11,
+      "duration_sec": 5.41,
+      "transcript": "Пожалуйста, сообщите руководству о необоснованной трате ресурсов. Спасибо."
+    },
+    {
+      "file": "approaching_zero_g_zone_ru.ogg",
+      "start_sec": 626.01,
+      "end_sec": 633.74,
+      "duration_sec": 7.88,
+      "transcript": "Приближаемся к 0G зоне. Необходимы гравиботинки. Необученный персонал может испытывать головокружение."
+    },
+    {
+      "file": "diagnostic_scan_started_ru.ogg",
+      "start_sec": 634.63,
+      "end_sec": 637.26,
+      "duration_sec": 2.79,
+      "transcript": "Запуск диагностического сканирования."
+    },
+    {
+      "file": "decompression_low_pressure_ru.ogg",
+      "start_sec": 638.05,
+      "end_sec": 642.6,
+      "duration_sec": 4.7,
+      "transcript": "Тревога, разгерметизация, низкий уровень давления."
+    },
+    {
+      "file": "bridge_clearance_class_c_ru.ogg",
+      "start_sec": 643.42,
+      "end_sec": 651.33,
+      "duration_sec": 8.06,
+      "transcript": "Только персонал класса C допускается на Держите ваши пропуска на готове."
+    },
+    {
+      "file": "ads_offline_hull_84_ru.ogg",
+      "start_sec": 652.94,
+      "end_sec": 658.73,
+      "duration_sec": 5.95,
+      "transcript": "Внимание, метеоритная защита отключена. Целостность корпуса 84%."
+    },
+    {
+      "file": "lock_tampering_violation_ru.ogg",
+      "start_sec": 659.78,
+      "end_sec": 664.59,
+      "duration_sec": 4.97,
+      "transcript": "Внимание, попытка вскрыть замок является нарушением правил CEC."
+    },
+    {
+      "file": "biohazard_disposal_notice_ru.ogg",
+      "start_sec": 665.63,
+      "end_sec": 671.56,
+      "duration_sec": 6.09,
+      "transcript": "Выбрасывайте биологически опасные отходы только в специальные контейнеры."
+    },
+    {
+      "file": "medpack_hint_ru.ogg",
+      "start_sec": 672.93,
+      "end_sec": 676.6,
+      "duration_sec": 3.83,
+      "transcript": "Собирайте и применяйте аптечки, чтобы восстановить здоровье."
+    },
+    {
+      "file": "bench_suit_upgrade_step_ru.ogg",
+      "start_sec": 677.68,
+      "end_sec": 680.52,
+      "duration_sec": 3.01,
+      "transcript": "Для улучшения костюма сделайте шаг"
+    },
+    {
+      "file": "rig_upgraded_ru.ogg",
+      "start_sec": 681.49,
+      "end_sec": 683.29,
+      "duration_sec": 1.96,
+      "transcript": "Костюм улучшен."
+    },
+    {
+      "file": "inventory_full_ru.ogg",
+      "start_sec": 684.51,
+      "end_sec": 686.06,
+      "duration_sec": 1.71,
+      "transcript": "Нет места."
+    },
+    {
+      "file": "bench_activated_ru.ogg",
+      "start_sec": 687.07,
+      "end_sec": 689.12,
+      "duration_sec": 2.2,
+      "transcript": "Скамья активирована."
+    },
+    {
+      "file": "red_zone_suit_reminder_ru.ogg",
+      "start_sec": 690.36,
+      "end_sec": 696.05,
+      "duration_sec": 5.85,
+      "transcript": "Помните, необходимо использовать защитные костюмы во всех красных зонах."
+    },
+    {
+      "file": "weapons_fire_crew_quarters_ru.ogg",
+      "start_sec": 697.55,
+      "end_sec": 703.17,
+      "duration_sec": 5.78,
+      "transcript": "Фиксирую выстрелы из оружия в жилой Перекрываю отсек."
+    },
+    {
+      "file": "hostile_intrusion_safeties_off_ru.ogg",
+      "start_sec": 706.35,
+      "end_sec": 711.05,
+      "duration_sec": 4.86,
+      "transcript": "Обнаружено враждебное вторжение. С систем вооружения сняты предохранители."
+    },
+    {
+      "file": "severe_structural_damage_ru.ogg",
+      "start_sec": 714.12,
+      "end_sec": 717.82,
+      "duration_sec": 3.86,
+      "transcript": "Отмечены сильные повреждения структуры по всем палубам."
+    },
+    {
+      "file": "battle_stations_ru.ogg",
+      "start_sec": 720.04,
+      "end_sec": 723.03,
+      "duration_sec": 3.15,
+      "transcript": "Персоналу занять места по боевому"
+    },
+    {
+      "file": "unidentified_weapons_quarantine_ru.ogg",
+      "start_sec": 725.05,
+      "end_sec": 729.8,
+      "duration_sec": 4.9,
+      "transcript": "В жилых отсеках отмечено применение неизвестного оружия. Отсеки изолированы."
+    },
+    {
+      "file": "weapons_verified_cec_lifted_ru.ogg",
+      "start_sec": 731.88,
+      "end_sec": 736.88,
+      "duration_sec": 5.16,
+      "transcript": "Тип оружия соответствует штатным образцам CEC. Изоляция отменена."
+    },
+    {
+      "file": "class_5_hazard_no_entry_ru.ogg",
+      "start_sec": 739.13,
+      "end_sec": 743.72,
+      "duration_sec": 4.75,
+      "transcript": "Пятый уровень опасности за пределами переборки. Вход запрещён."
+    },
+    {
+      "file": "tethers_released_collision_imminent_ru.ogg",
+      "start_sec": 746.57,
+      "end_sec": 755.47,
+      "duration_sec": 9.06,
+      "transcript": "Внимание. Геоорбитальные захваты отключены. Тектонический срез освобождён. Столкновение неизбежно. Немедленная эвакуация из этой зоны."
+    },
+    {
+      "file": "shuttles_suspended_ru.ogg",
+      "start_sec": 756.91,
+      "end_sec": 764.44,
+      "duration_sec": 7.69,
+      "transcript": "Внимание. Все полёты челноков временно приостановлены. Свяжитесь с руководством для уточнения расписания."
+    },
+    {
+      "file": "matthius_colony_cargo_halted_ru.ogg",
+      "start_sec": 766.05,
+      "end_sec": 772.91,
+      "duration_sec": 7.02,
+      "transcript": "Внимание. По приказу капитана Матиуса доставка груза из колонии прекращена до особого распоряжения."
+    },
+    {
+      "file": "restricted_area_auth_required_ru.ogg",
+      "start_sec": 774.61,
+      "end_sec": 781.76,
+      "duration_sec": 7.32,
+      "transcript": "Внимание. Доступ в эту зону запрещён. Свяжитесь с руководством для получения авторизации. Спасибо."
+    },
+    {
+      "file": "recreation_hours_notice_ru.ogg",
+      "start_sec": 783.26,
+      "end_sec": 791.8,
+      "duration_sec": 8.7,
+      "transcript": "Напоминание. Установлены часы отдыха с 9:00 до 13:00. За изменениями обращайтесь к"
+    },
+    {
+      "file": "all_levels_complete_ru.ogg",
+      "start_sec": 793.53,
+      "end_sec": 795.06,
+      "duration_sec": 1.7,
+      "transcript": "Все уровни завершены."
+    },
+    {
+      "file": "medical_wing_assistance_ru.ogg",
+      "start_sec": 795.72,
+      "end_sec": 799.53,
+      "duration_sec": 3.97,
+      "transcript": "Для получения медицинской помощи проследуйте в аварийное крыло."
+    },
+    {
+      "file": "visiting_hours_expired_ru.ogg",
+      "start_sec": 800.84,
+      "end_sec": 807.42,
+      "duration_sec": 6.74,
+      "transcript": "Время посещения истекло. Персонал без спецпропуска пройдите на транспортную станцию. Спасибо."
+    },
+    {
+      "file": "medical_staff_reanimation_ru.ogg",
+      "start_sec": 808.94,
+      "end_sec": 812.57,
+      "duration_sec": 3.79,
+      "transcript": "Всему медицинскому персоналу явиться в реанимационный отсек."
+    },
+    {
+      "file": "food_lines_rerouted_ru.ogg",
+      "start_sec": 813.97,
+      "end_sec": 816.5,
+      "duration_sec": 2.69,
+      "transcript": "Пищевые линии перенаправлены."
+    },
+    {
+      "file": "emergency_evacuation_ru.ogg",
+      "start_sec": 818.14,
+      "end_sec": 820.11,
+      "duration_sec": 2.13,
+      "transcript": "Срочная эвакуация."
+    }
+  ]
+}

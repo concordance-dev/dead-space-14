@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Dead Space 14 — Поиск спрайтов и аудио</title>
+  <style>
+    @font-face {
+      font-family: "DS-Mono";
+      src: url("Fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "DS-Mono";
+      src: url("Fonts/RobotoMono/RobotoMono-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      color-scheme: dark;
+      --bg: #070b10;
+      --panel: rgba(17, 22, 28, 0.88);
+      --nav: rgba(23, 29, 36, 0.94);
+      --surface: #181f27;
+      --border: #2d3846;
+      --text: #e6edf3;
+      --muted: #8b9bb0;
+      --link: #58a6ff;
+      --btn-text: #09131c;
+      --badge: #238636;
+      --thumb-track: #485666;
+      --thumb-bg: #161b22;
+      accent-color: var(--link);
+      scrollbar-color: var(--thumb-track) var(--thumb-bg);
+    }
+
+    @supports not (scrollbar-color: auto) {
+      html::-webkit-scrollbar { width: 10px; height: 10px; }
+      html::-webkit-scrollbar-thumb { background: var(--thumb-track); }
+      html::-webkit-scrollbar-track { background: var(--thumb-bg); }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-block-size: 100dvh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "DS-Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size-adjust: from-font;
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    a { color: var(--link); }
+
+    /* Default Parallaxes Backdrop */
+    .parallax-stage {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      overflow: clip;
+      background: #04070c;
+    }
+
+    .p-layer {
+      position: absolute;
+      inset: -14vh 0;
+      will-change: transform;
+    }
+
+    .p-stars-far {
+      background: url("Parallaxes/stars_far.png") repeat;
+      opacity: 0.92;
+      --shift: -45px;
+    }
+
+    .p-nebula {
+      background: url("Parallaxes/nebula_aegis.png") repeat;
+      opacity: 0.65;
+      --shift: -95px;
+    }
+
+    .p-stars-near {
+      background: url("Parallaxes/stars_near.png") repeat;
+      opacity: 0.85;
+      --shift: -145px;
+    }
+
+    .p-planet {
+      inset: auto;
+      inset-inline-end: max(-90px, calc(50% - 760px));
+      inset-block-start: 10vh;
+      inline-size: min(46vw, 520px);
+      block-size: min(46vw, 520px);
+      background: url("Parallaxes/aegis_vii.png") center / contain no-repeat;
+      opacity: 0.88;
+      --shift: -120px;
+    }
+
+    .p-asteroids {
+      background: url("Parallaxes/asteroids_debris.png") repeat;
+      opacity: 0.72;
+      --shift: -220px;
+    }
+
+    @media (max-width: 1120px) {
+      .p-planet { opacity: 0.36; inset-inline-end: -12vw; }
+    }
+
+    @keyframes parallax-shift {
+      from { transform: translateY(0); }
+      to { transform: translateY(var(--shift, -100px)); }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      @supports ((animation-timeline: scroll()) and (animation-range: entry)) {
+        .p-layer {
+          animation: parallax-shift linear both;
+          animation-timeline: scroll(root);
+        }
+      }
+    }
+
+    /* Minimal Scrubby Navbar */
+    header.navbar {
+      background: var(--nav);
+      border-block-end: 1px solid var(--border);
+      padding-inline: 1rem;
+      padding-block: 0.65rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-inner {
+      max-inline-size: 980px;
+      margin-inline: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: safe center;
+      gap: 0.75rem 1.25rem;
+    }
+
+    nav.top-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-tab {
+      appearance: none;
+      background: transparent;
+      border: 0;
+      padding-inline: 0.2rem;
+      padding-block: 0.2rem;
+      font: inherit;
+      font-size: 0.9rem;
+      color: var(--muted);
+      cursor: pointer;
+      border-block-end: 2px solid transparent;
+    }
+
+    .nav-tab:hover { color: var(--text); }
+    .nav-tab[aria-pressed="true"] {
+      color: var(--text);
+      font-weight: 700;
+      border-block-end-color: var(--link);
+    }
+
+    .nav-right {
+      margin-inline-start: auto;
+      font-size: 0.85rem;
+    }
+
+    /* Centered Frosted Search Column */
+    main.container {
+      max-inline-size: 920px;
+      margin-inline: auto;
+      margin-block: 1.1rem;
+      padding-inline: clamp(0.85rem, 2vw, 1.5rem);
+      padding-block: 1.25rem 2.25rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      backdrop-filter: blur(8px);
+    }
+
+    @media (max-width: 940px) {
+      main.container { margin-block: 0; border-radius: 0; border-inline: 0; }
+    }
+
+    h1.sr-only, .sr-only {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    .search-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-block-end: 0.65rem;
+    }
+
+    .search-row input[type="search"] {
+      flex: 1 1 240px;
+      max-inline-size: 320px;
+      min-inline-size: 0;
+      padding-inline: 0.7rem;
+      padding-block: 0.45rem;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+    }
+
+    .search-row select {
+      flex: 0 1 220px;
+      min-inline-size: 0;
+      padding-inline: 0.6rem;
+      padding-block: 0.45rem;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+    }
+
+    .btn-primary {
+      appearance: none;
+      border: 1px solid var(--link);
+      background: var(--link);
+      color: var(--btn-text);
+      font: inherit;
+      font-weight: 700;
+      padding-inline: 0.9rem;
+      padding-block: 0.45rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-outline {
+      appearance: none;
+      border: 1px solid var(--link);
+      background: transparent;
+      color: var(--link);
+      font: inherit;
+      font-size: 0.8rem;
+      padding-inline: 0.58rem;
+      padding-block: 0.22rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover,
+    .btn-outline[aria-pressed="true"] {
+      background: var(--link);
+      color: var(--btn-text);
+    }
+
+    .btn-subtle {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.8rem;
+      padding-inline: 0.6rem;
+      padding-block: 0.28rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-subtle:hover {
+      color: var(--text);
+      border-color: var(--link);
+    }
+
+    .count-row {
+      display: flex;
+      justify-content: center;
+      margin-block-end: 1.25rem;
+    }
+
+    .count-badge {
+      display: inline-block;
+      background: var(--badge);
+      color: #ffffff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding-inline: 0.55rem;
+      padding-block: 0.16rem;
+      border-radius: 5px;
+    }
+
+    /* Scrubby Result List */
+    .results-list {
+      max-inline-size: 720px;
+      margin-inline: auto;
+      display: grid;
+      gap: 1.05rem;
+    }
+
+    .icon-row {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 145px;
+      display: grid;
+      grid-template-columns: 136px minmax(0, 1fr);
+      gap: 1rem;
+      align-items: start;
+      padding-block-end: 1rem;
+      border-block-end: 1px solid var(--border);
+    }
+
+    @media (max-width: 560px) {
+      .icon-row { grid-template-columns: 108px minmax(0, 1fr); gap: 0.75rem; }
+    }
+
+    @supports not (content-visibility: auto) {
+      .icon-row { contain: layout style paint; }
+    }
+
+    .icon-box {
+      inline-size: 136px;
+      block-size: 136px;
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid #3c4248;
+      background-color: #2c3034;
+      background-image:
+        linear-gradient(45deg, #3a3f44 25%, transparent 25%),
+        linear-gradient(-45deg, #3a3f44 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #3a3f44 75%),
+        linear-gradient(-45deg, transparent 75%, #3a3f44 75%);
+      background-size: 16px 16px;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+      display: grid;
+      place-items: center;
+    }
+
+    @media (max-width: 560px) {
+      .icon-box { inline-size: 108px; block-size: 108px; }
+    }
+
+    .icon-box img,
+    .icon-box canvas {
+      display: block;
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: contain;
+      image-rendering: pixelated;
+      outline: 1px dashed rgba(244, 130, 148, 0.7);
+      outline-offset: -1px;
+    }
+
+    .icon-details {
+      min-inline-size: 0;
+      display: grid;
+      gap: 0.24rem;
+    }
+
+    .detail-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .detail-head h2 {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-actions {
+      display: flex;
+      gap: 0.35rem;
+      flex: none;
+    }
+
+    .meta-line {
+      margin: 0;
+      font-size: 0.84rem;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-key { font-weight: 700; }
+
+    .file-link-btn {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      font: inherit;
+      color: var(--link);
+      text-decoration: underline;
+      cursor: pointer;
+      text-align: start;
+      overflow-wrap: anywhere;
+    }
+
+    /* Inline Dirs / Frames Drawer */
+    .dirs-drawer {
+      margin-block-start: 0.55rem;
+      padding: 0.65rem;
+      background: var(--nav);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+      gap: 0.55rem;
+    }
+
+    .dir-cell {
+      display: grid;
+      justify-items: center;
+      gap: 0.25rem;
+    }
+
+    .dir-cell canvas {
+      inline-size: 64px;
+      block-size: 64px;
+      image-rendering: pixelated;
+      background-color: #2c3034;
+      background-image:
+        linear-gradient(45deg, #3a3f44 25%, transparent 25%),
+        linear-gradient(-45deg, #3a3f44 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #3a3f44 75%),
+        linear-gradient(-45deg, transparent 75%, #3a3f44 75%);
+      background-size: 12px 12px;
+      background-position: 0 0, 0 6px, 6px -6px, -6px 0;
+      border: 1px solid #3c4248;
+    }
+
+    .dir-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    /* Audio Rows */
+    .audio-row {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 108px;
+      padding-block-end: 0.9rem;
+      border-block-end: 1px solid var(--border);
+      display: grid;
+      gap: 0.4rem;
+    }
+
+    @supports not (content-visibility: auto) {
+      .audio-row { contain: layout style paint; }
+    }
+
+    .audio-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.35rem 0.75rem;
+    }
+
+    .audio-head h2 {
+      margin: 0;
+      font-size: 0.94rem;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .audio-transcript {
+      margin: 0;
+      padding-inline-start: 0.65rem;
+      border-inline-start: 2px solid var(--link);
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .audio-row audio {
+      inline-size: 100%;
+      block-size: 36px;
+    }
+
+    .load-more-wrap {
+      display: flex;
+      justify-content: center;
+      margin-block-start: 1.25rem;
+    }
+
+    /* Native Modal File Viewer */
+    dialog {
+      max-inline-size: min(880px, 94dvw);
+      max-block-size: 86dvh;
+      inline-size: 100%;
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.15rem;
+    }
+
+    dialog:modal { overscroll-behavior: contain; }
+
+    dialog::backdrop {
+      background: rgba(0, 0, 0, 0.58);
+      overflow: hidden;
+      overscroll-behavior: contain;
+    }
+
+    .dlg-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 1rem;
+      padding-block-end: 0.75rem;
+      border-block-end: 1px solid var(--border);
+      margin-block-end: 0.9rem;
+    }
+
+    .dlg-head h1 {
+      margin: 0;
+      font-size: 1.05rem;
+      overflow-wrap: anywhere;
+    }
+
+    .dlg-states {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+      gap: 0.65rem;
+    }
+
+    .dlg-tile {
+      display: grid;
+      justify-items: center;
+      gap: 0.3rem;
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-size: 0.74rem;
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+
+    .dlg-tile img {
+      display: block;
+      inline-size: 72px;
+      block-size: 72px;
+      object-fit: contain;
+      image-rendering: pixelated;
+      background-color: #2c3034;
+      background-image:
+        linear-gradient(45deg, #3a3f44 25%, transparent 25%),
+        linear-gradient(-45deg, #3a3f44 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #3a3f44 75%),
+        linear-gradient(-45deg, transparent 75%, #3a3f44 75%);
+      background-size: 12px 12px;
+      background-position: 0 0, 0 6px, 6px -6px, -6px 0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax-stage" aria-hidden="true">
+    <div class="p-layer p-stars-far"></div>
+    <div class="p-layer p-nebula"></div>
+    <div class="p-layer p-stars-near"></div>
+    <div class="p-layer p-planet"></div>
+    <div class="p-layer p-asteroids"></div>
+  </div>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <nav class="top-links" aria-label="Разделы">
+        <button type="button" class="nav-tab" data-tab="states" aria-pressed="true">Поиск спрайтов</button>
+        <button type="button" class="nav-tab" data-tab="audio" aria-pressed="false">Поиск аудио</button>
+      </nav>
+      <div class="nav-right">
+        <a href="https://github.com/concordance-dev/dead-space-14">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+    <h1 class="sr-only">Dead Space 14 — Поиск спрайтов и аудио</h1>
+
+    <search>
+      <form class="search-row" id="search-form">
+        <label for="q" class="sr-only">Regex или текстовый запрос</label>
+        <input type="search" id="q" name="q" placeholder="Regex / текст (напр. plasma, stasis, ^rig)">
+        <label for="cat-select" class="sr-only">Раздел</label>
+        <select id="cat-select" name="cat">
+          <option value="all">Все разделы</option>
+        </select>
+        <button type="submit" class="btn-primary">Найти</button>
+      </form>
+    </search>
+
+    <div class="count-row">
+      <span class="count-badge" id="result-badge">Загрузка...</span>
+    </div>
+
+    <section class="results-list" id="results" aria-label="Результаты поиска"></section>
+    <div class="load-more-wrap" id="more-wrap"></div>
+  </main>
+
+  <dialog id="file-dialog" closedby="any" aria-labelledby="dlg-title">
+    <div class="dlg-head">
+      <div>
+        <h1 id="dlg-title">RSI</h1>
+        <p class="meta-line" id="dlg-meta"></p>
+      </div>
+      <form method="dialog">
+        <button type="submit" class="btn-subtle" value="close" autofocus>Закрыть</button>
+      </form>
+    </div>
+    <div class="dlg-states" id="dlg-states"></div>
+  </dialog>
+
+  <script>
+    const PAGE_SIZE = 25;
+    const DIR_LABELS = ["S", "N", "E", "W", "SE", "SW", "NE", "NW"];
+
+    const state = {
+      data: null,
+      tab: "states",
+      cat: "all",
+      query: "",
+      limit: PAGE_SIZE,
+      flatStates: [],
+      rsiMap: new Map(),
+      activeAnimTimers: [],
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const dialog = $("file-dialog");
+
+    if (!("closedBy" in HTMLDialogElement.prototype)) {
+      const outside = (e, dlg) => {
+        const r = dlg.getBoundingClientRect();
+        return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+      };
+      let downOutside = false;
+      dialog.addEventListener("pointerdown", (e) => { downOutside = outside(e, dialog); });
+      dialog.addEventListener("pointerup", (e) => {
+        if (downOutside && outside(e, dialog)) dialog.close();
+      });
+    }
+
+    dialog.addEventListener("close", () => {
+      dialog.returnValue = "";
+    });
+
+    const supportsLazyMedia = Object.hasOwn(HTMLMediaElement.prototype, "loading");
+    let mediaObserver = null;
+    if (!supportsLazyMedia && "IntersectionObserver" in window) {
+      mediaObserver = new IntersectionObserver((entries, obs) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const el = entry.target;
+          if (el.dataset.src) {
+            el.src = el.dataset.src;
+            delete el.dataset.src;
+            el.load();
+          }
+          obs.unobserve(el);
+        }
+      }, { rootMargin: "200px 0px" });
+    }
+
+    function stopAllAnimations() {
+      for (const timerId of state.activeAnimTimers) {
+        clearTimeout(timerId);
+      }
+      state.activeAnimTimers = [];
+    }
+
+    function makeMatcher(q) {
+      const trimmed = q.trim();
+      if (!trimmed) return () => true;
+      try {
+        const re = new RegExp(trimmed, "i");
+        return (str) => re.test(str);
+      } catch {
+        const low = trimmed.toLowerCase();
+        return (str) => str.toLowerCase().includes(low);
+      }
+    }
+
+    function openRsiDialog(rsiPath) {
+      const rsi = state.rsiMap.get(rsiPath);
+      if (!rsi) return;
+      $("dlg-title").textContent = rsi.path;
+      $("dlg-meta").textContent = `Dimensions: ${rsi.size[0]}x${rsi.size[1]} · States: ${rsi.states.length}`;
+      const grid = $("dlg-states");
+      grid.innerHTML = "";
+      for (const st of rsi.states) {
+        const tile = document.createElement("div");
+        tile.className = "dlg-tile";
+        const img = document.createElement("img");
+        img.src = st.thumb || `${rsi.path}/${st.name}.png`;
+        img.alt = st.name;
+        img.loading = "lazy";
+        img.width = 72;
+        img.height = 72;
+        const name = document.createElement("span");
+        name.textContent = st.name;
+        tile.append(img, name);
+        grid.append(tile);
+      }
+      dialog.showModal();
+    }
+
+    function syncUrl() {
+      const params = new URLSearchParams();
+      if (state.tab !== "states") params.set("tab", state.tab);
+      if (state.cat !== "all") params.set("cat", state.cat);
+      if (state.query.trim()) params.set("q", state.query.trim());
+      const qs = params.toString();
+      history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+    }
+
+    function updateCategoryDropdown(list) {
+      const counts = new Map();
+      for (const item of list) {
+        counts.set(item.cat, (counts.get(item.cat) || 0) + 1);
+      }
+      const sel = $("cat-select");
+      const current = state.cat;
+      sel.innerHTML = "";
+      const optAll = document.createElement("option");
+      optAll.value = "all";
+      optAll.textContent = `Все разделы (${list.length})`;
+      sel.append(optAll);
+      for (const [cat, cnt] of [...counts.entries()].sort()) {
+        const o = document.createElement("option");
+        o.value = cat;
+        o.textContent = `${cat} (${cnt})`;
+        sel.append(o);
+      }
+      sel.value = counts.has(current) ? current : "all";
+      state.cat = sel.value;
+    }
+
+    function renderDirsDrawer(rowEl, stItem) {
+      const existing = rowEl.querySelector(".dirs-drawer");
+      if (existing) {
+        existing.remove();
+        return;
+      }
+      const drawer = document.createElement("div");
+      drawer.className = "dirs-drawer";
+      const srcImg = new Image();
+      srcImg.src = `${stItem.rsi}/${stItem.name}.png`;
+      srcImg.onload = () => {
+        const [sx, sy] = stItem.size;
+        const cols = Math.max(1, Math.floor(srcImg.naturalWidth / sx));
+        const dirs = stItem.dirs || 1;
+        const frames = stItem.frames || 1;
+        const total = Math.min(dirs * frames, Math.floor(srcImg.naturalWidth / sx) * Math.floor(srcImg.naturalHeight / sy));
+        for (let idx = 0; idx < total; idx++) {
+          const d = Math.floor(idx / frames);
+          const f = (idx % frames) + 1;
+          const col = idx % cols;
+          const row = Math.floor(idx / cols);
+          const cell = document.createElement("div");
+          cell.className = "dir-cell";
+          const cv = document.createElement("canvas");
+          cv.width = sx;
+          cv.height = sy;
+          const ctx = cv.getContext("2d");
+          ctx.imageSmoothingEnabled = false;
+          ctx.drawImage(srcImg, col * sx, row * sy, sx, sy, 0, 0, sx, sy);
+          const lbl = document.createElement("span");
+          lbl.className = "dir-label";
+          lbl.textContent = `${DIR_LABELS[d] || "D" + d}/F${f}`;
+          cell.append(cv, lbl);
+          drawer.append(cell);
+        }
+      };
+      rowEl.querySelector(".icon-details").append(drawer);
+    }
+
+    function toggleSpriteAnimation(box, btn, stItem) {
+      if (box.dataset.playing === "1") {
+        box.dataset.playing = "0";
+        btn.setAttribute("aria-pressed", "false");
+        btn.textContent = "Play";
+        const staticImg = document.createElement("img");
+        staticImg.src = stItem.thumb || `${stItem.rsi}/${stItem.name}.png`;
+        staticImg.alt = `${stItem.name} из ${stItem.rsi}`;
+        staticImg.width = 128;
+        staticImg.height = 128;
+        box.innerHTML = "";
+        box.append(staticImg);
+        return;
+      }
+
+      box.dataset.playing = "1";
+      btn.setAttribute("aria-pressed", "true");
+      btn.textContent = "Stop";
+
+      const [sx, sy] = stItem.size;
+      const cv = document.createElement("canvas");
+      cv.width = sx;
+      cv.height = sy;
+      box.innerHTML = "";
+      box.append(cv);
+
+      const sheet = new Image();
+      sheet.src = `${stItem.rsi}/${stItem.name}.png`;
+      sheet.onload = () => {
+        const ctx = cv.getContext("2d");
+        ctx.imageSmoothingEnabled = false;
+        const cols = Math.max(1, Math.floor(sheet.naturalWidth / sx));
+        const delays = (stItem.delays && stItem.delays[0]) ? stItem.delays[0] : Array(stItem.frames).fill(0.12);
+        let frameIdx = 0;
+
+        function step() {
+          if (box.dataset.playing !== "1" || !box.isConnected) return;
+          const col = frameIdx % cols;
+          const row = Math.floor(frameIdx / cols);
+          ctx.clearRect(0, 0, sx, sy);
+          ctx.drawImage(sheet, col * sx, row * sy, sx, sy, 0, 0, sx, sy);
+          const waitMs = Math.max(30, Math.round((delays[frameIdx % delays.length] || 0.12) * 1000));
+          frameIdx = (frameIdx + 1) % Math.max(1, stItem.frames);
+          const tid = setTimeout(step, waitMs);
+          state.activeAnimTimers.push(tid);
+        }
+        step();
+      };
+    }
+
+    function copyText(txt, btn) {
+      navigator.clipboard?.writeText(txt).then(() => {
+        const prev = btn.textContent;
+        btn.textContent = "OK";
+        setTimeout(() => { btn.textContent = prev; }, 900);
+      });
+    }
+
+    function render() {
+      if (!state.data) return;
+      stopAllAnimations();
+
+      const source = state.tab === "states" ? state.flatStates : state.data.audio;
+      updateCategoryDropdown(source);
+      const match = makeMatcher(state.query);
+
+      const filtered = source.filter((item) => {
+        if (state.cat !== "all" && item.cat !== state.cat) return false;
+        if (state.tab === "states") {
+          return match(item.name) || match(item.rsi);
+        }
+        return match(item.path) || (item.text && match(item.text)) || (item.speaker && match(item.speaker));
+      });
+
+      const shown = filtered.slice(0, state.limit);
+      $("result-badge").textContent = `${filtered.length} ${state.tab === "states" ? "Icons" : "Audio"}`;
+
+      const container = $("results");
+      container.innerHTML = "";
+
+      for (const item of shown) {
+        if (state.tab === "states") {
+          const row = document.createElement("article");
+          row.className = "icon-row";
+
+          const box = document.createElement("div");
+          box.className = "icon-box";
+          const img = document.createElement("img");
+          img.src = item.thumb || `${item.rsi}/${item.name}.png`;
+          img.alt = `${item.name} из ${item.rsi}`;
+          img.loading = "lazy";
+          img.width = 128;
+          img.height = 128;
+          box.append(img);
+
+          const details = document.createElement("div");
+          details.className = "icon-details";
+
+          const head = document.createElement("div");
+          head.className = "detail-head";
+          const h2 = document.createElement("h2");
+          h2.textContent = item.name;
+
+          const actions = document.createElement("div");
+          actions.className = "detail-actions";
+          if ((item.frames || 1) > 1) {
+            const playBtn = document.createElement("button");
+            playBtn.type = "button";
+            playBtn.className = "btn-outline";
+            playBtn.setAttribute("aria-pressed", "false");
+            playBtn.textContent = "Play";
+            playBtn.addEventListener("click", () => toggleSpriteAnimation(box, playBtn, item));
+            actions.append(playBtn);
+          }
+          if ((item.dirs || 1) > 1 || (item.frames || 1) > 1) {
+            const dirsBtn = document.createElement("button");
+            dirsBtn.type = "button";
+            dirsBtn.className = "btn-outline";
+            dirsBtn.textContent = "Dirs";
+            dirsBtn.addEventListener("click", () => renderDirsDrawer(row, item));
+            actions.append(dirsBtn);
+          }
+          const cpBtn = document.createElement("button");
+          cpBtn.type = "button";
+          cpBtn.className = "btn-subtle";
+          cpBtn.textContent = "Copy";
+          cpBtn.addEventListener("click", () => copyText(`${item.rsi}#${item.name}`, cpBtn));
+          actions.append(cpBtn);
+
+          head.append(h2, actions);
+
+          const fileLine = document.createElement("p");
+          fileLine.className = "meta-line";
+          const fk = document.createElement("span");
+          fk.className = "meta-key";
+          fk.textContent = "File: ";
+          const fl = document.createElement("button");
+          fl.type = "button";
+          fl.className = "file-link-btn";
+          fl.textContent = item.rsi;
+          fl.addEventListener("click", () => openRsiDialog(item.rsi));
+          fileLine.append(fk, fl);
+
+          const dimLine = document.createElement("p");
+          dimLine.className = "meta-line";
+          dimLine.innerHTML = `<span class="meta-key">Dimensions:</span> ${item.size[0]}x${item.size[1]}`;
+
+          const dirLine = document.createElement("p");
+          dirLine.className = "meta-line";
+          dirLine.innerHTML = `<span class="meta-key">Directions:</span> ${item.dirs}`;
+
+          const frmLine = document.createElement("p");
+          frmLine.className = "meta-line";
+          frmLine.innerHTML = `<span class="meta-key">Frames:</span> ${item.frames}`;
+
+          details.append(head, fileLine, dimLine, dirLine, frmLine);
+          row.append(box, details);
+          container.append(row);
+        } else {
+          const row = document.createElement("article");
+          row.className = "audio-row";
+          const head = document.createElement("div");
+          head.className = "audio-head";
+          const h2 = document.createElement("h2");
+          h2.textContent = item.path;
+          const cp = document.createElement("button");
+          cp.type = "button";
+          cp.className = "btn-subtle";
+          cp.textContent = `${item.ch === 2 ? "Stereo" : "Mono"} · Copy`;
+          cp.addEventListener("click", () => copyText(item.path, cp));
+          head.append(h2, cp);
+          row.append(head);
+
+          if (item.text) {
+            const p = document.createElement("p");
+            p.className = "audio-transcript";
+            p.textContent = item.speaker ? `${item.speaker}: «${item.text}»` : item.text;
+            row.append(p);
+          } else if (item.speaker) {
+            const p = document.createElement("p");
+            p.className = "audio-transcript";
+            p.textContent = item.speaker;
+            row.append(p);
+          }
+
+          const audio = document.createElement("audio");
+          audio.controls = true;
+          audio.preload = "none";
+          if (supportsLazyMedia) {
+            audio.setAttribute("loading", "lazy");
+            audio.src = item.path;
+          } else {
+            audio.dataset.src = item.path;
+            if (mediaObserver) mediaObserver.observe(audio);
+          }
+          row.append(audio);
+          container.append(row);
+        }
+      }
+
+      const moreWrap = $("more-wrap");
+      moreWrap.innerHTML = "";
+      if (filtered.length > shown.length) {
+        const more = document.createElement("button");
+        more.type = "button";
+        more.className = "btn-outline";
+        more.textContent = `Показать ещё (${filtered.length - shown.length})`;
+        more.addEventListener("click", () => {
+          state.limit += PAGE_SIZE;
+          render();
+        });
+        moreWrap.append(more);
+      }
+      syncUrl();
+    }
+
+    function setTab(tabName) {
+      state.tab = tabName;
+      state.cat = "all";
+      state.limit = PAGE_SIZE;
+      document.querySelectorAll(".nav-tab[data-tab]").forEach((b) =>
+        b.setAttribute("aria-pressed", String(b.dataset.tab === tabName))
+      );
+    }
+
+    document.querySelectorAll(".nav-tab[data-tab]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setTab(btn.dataset.tab);
+        render();
+      });
+    });
+
+    $("search-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      state.query = $("q").value;
+      state.limit = PAGE_SIZE;
+      render();
+    });
+
+    $("q").addEventListener("input", () => {
+      state.query = $("q").value;
+      state.limit = PAGE_SIZE;
+      render();
+    });
+
+    $("cat-select").addEventListener("change", () => {
+      state.cat = $("cat-select").value;
+      state.limit = PAGE_SIZE;
+      render();
+    });
+
+    const initParams = new URLSearchParams(location.search);
+    if (initParams.get("tab") && ["states", "audio"].includes(initParams.get("tab"))) {
+      setTab(initParams.get("tab"));
+    }
+    if (initParams.get("cat")) state.cat = initParams.get("cat");
+    if (initParams.get("q")) {
+      state.query = initParams.get("q");
+      $("q").value = state.query;
+    }
+
+    fetch("catalog.json")
+      .then((r) => r.json())
+      .then((data) => {
+        state.data = data;
+        state.flatStates = [];
+        state.rsiMap.clear();
+        for (const r of data.rsi) {
+          state.rsiMap.set(r.path, r);
+          for (const s of r.states) {
+            state.flatStates.push({
+              cat: r.cat,
+              rsi: r.path,
+              size: r.size,
+              name: s.name,
+              dirs: s.dirs || 1,
+              frames: s.frames || 1,
+              delays: s.delays || null,
+              thumb: s.thumb || `${r.path}/${s.name}.png`,
+            });
+          }
+        }
+        render();
+      })
+      .catch((err) => {
+        $("result-badge").textContent = "Ошибка загрузки: " + err;
+      });
+  </script>
+</body>
+</html>

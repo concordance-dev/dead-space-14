@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "states": [
+    {
+      "name": "ds1"
+    },
+    {
+      "name": "ds2"
+    },
+    {
+      "name": "ds3"
+    },
+    {
+      "name": "mar1"
+    },
+    {
+      "name": "mar0"
+    },
+    {
+      "name": "ser1"
+    },
+    {
+      "name": "ser0"
+    },
+    {
+      "name": "op1"
+    },
+    {
+      "name": "op2"
+    },
+    {
+      "name": "op3"
+    },
+    {
+      "name": "mau1"
+    },
+    {
+      "name": "mau0"
+    },
+    {
+      "name": "you",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "eva"
+    },
+    {
+      "name": "armory"
+    },
+    {
+      "name": "smes"
+    },
+    {
+      "name": "tcomms"
+    },
+    {
+      "name": "bridge"
+    },
+    {
+      "name": "brig"
+    },
+    {
+      "name": "med"
+    },
+    {
+      "name": "engi"
+    },
+    {
+      "name": "tracker",
+      "delays": [
+        [
+          1.0,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "tracker-malfunction",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "tracker-dead",
+      "delays": [
+        [
+          1.0,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "tracker-locator"
+    },
+    {
+      "name": "signal"
+    },
+    {
+      "name": "signal_dir"
+    }
+  ]
+}

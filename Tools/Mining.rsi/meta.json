@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "rocksaw_off"
+    },
+    {
+      "name": "rocksaw_on"
+    },
+    {
+      "name": "plasmasaw_off"
+    },
+    {
+      "name": "plasmasaw_on"
+    },
+    {
+      "name": "plasma_saw_off"
+    },
+    {
+      "name": "plasma_saw_ignite",
+      "delays": [
+        [
+          0.04,
+          0.04,
+          0.04,
+          0.04,
+          0.04,
+          0.04,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "plasma_saw_on",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}

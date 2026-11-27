@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "preview"
+    },
+    {
+      "name": "necromorph_head",
+      "directions": 4
+    },
+    {
+      "name": "necromorph_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "necromorph_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "necromorph_chest",
+      "directions": 4
+    },
+    {
+      "name": "necromorph_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "necromorph_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "necromorph_l_leg_lying"
+    },
+    {
+      "name": "necromorph_r_leg_lying"
+    },
+    {
+      "name": "necromorph_l_arm_lying"
+    },
+    {
+      "name": "necromorph_r_arm_lying"
+    },
+    {
+      "name": "necromorph_head_lying"
+    },
+    {
+      "name": "necromorph_chest_lying"
+    }
+  ]
+}

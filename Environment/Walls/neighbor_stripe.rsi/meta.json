@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "stripe-0"
+    },
+    {
+      "name": "stripe-1"
+    },
+    {
+      "name": "stripe-2"
+    },
+    {
+      "name": "stripe-3"
+    },
+    {
+      "name": "stripe-4"
+    },
+    {
+      "name": "stripe-5"
+    },
+    {
+      "name": "stripe-6"
+    },
+    {
+      "name": "stripe-7"
+    },
+    {
+      "name": "stripe-8"
+    },
+    {
+      "name": "stripe-9"
+    },
+    {
+      "name": "stripe-10"
+    },
+    {
+      "name": "stripe-11"
+    },
+    {
+      "name": "stripe-12"
+    },
+    {
+      "name": "stripe-13"
+    },
+    {
+      "name": "stripe-14"
+    },
+    {
+      "name": "stripe-15"
+    },
+    {
+      "name": "shine-0"
+    },
+    {
+      "name": "shine-1"
+    },
+    {
+      "name": "shine-2"
+    },
+    {
+      "name": "shine-3"
+    },
+    {
+      "name": "shine-4"
+    },
+    {
+      "name": "shine-5"
+    },
+    {
+      "name": "shine-6"
+    },
+    {
+      "name": "shine-7"
+    },
+    {
+      "name": "shine-8"
+    },
+    {
+      "name": "shine-9"
+    },
+    {
+      "name": "shine-10"
+    },
+    {
+      "name": "shine-11"
+    },
+    {
+      "name": "shine-12"
+    },
+    {
+      "name": "shine-13"
+    },
+    {
+      "name": "shine-14"
+    },
+    {
+      "name": "shine-15"
+    }
+  ]
+}

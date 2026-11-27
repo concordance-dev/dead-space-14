@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "classic"
+    },
+    {
+      "name": "classic_suit"
+    },
+    {
+      "name": "classic_storage"
+    },
+    {
+      "name": "classic_helm"
+    },
+    {
+      "name": "classic_open"
+    },
+    {
+      "name": "classic_super",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          1.0,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "classic_lights_open"
+    },
+    {
+      "name": "classic_lights_closed"
+    },
+    {
+      "name": "classic_lights_red"
+    },
+    {
+      "name": "classic_panel"
+    },
+    {
+      "name": "classic_ready"
+    },
+    {
+      "name": "classic_uv"
+    },
+    {
+      "name": "classic_locked"
+    },
+    {
+      "name": "classic_uvstrong",
+      "delays": [
+        [
+          0.3,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "industrial"
+    },
+    {
+      "name": "industrial_helm"
+    },
+    {
+      "name": "industrial_suit"
+    },
+    {
+      "name": "industrial_storage"
+    },
+    {
+      "name": "industrial_open"
+    },
+    {
+      "name": "industrial_super",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          1.0,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "industrial_lights_open"
+    },
+    {
+      "name": "industrial_lights_closed"
+    },
+    {
+      "name": "industrial_lights_red"
+    },
+    {
+      "name": "industrial_panel"
+    },
+    {
+      "name": "industrial_ready"
+    },
+    {
+      "name": "industrial_uv",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "industrial_locked"
+    },
+    {
+      "name": "industrial_uvstrong",
+      "delays": [
+        [
+          0.3,
+          0.2
+        ]
+      ]
+    }
+  ]
+}

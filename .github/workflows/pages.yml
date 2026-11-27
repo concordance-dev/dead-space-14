@@ -1,0 +1,163 @@
+name: Deploy Asset Catalog
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow
+        run: pip install --disable-pip-version-check pillow
+
+      - name: Build static catalog site
+        run: |
+          python3 - <<'EOF'
+          import json
+          import shutil
+          from pathlib import Path
+          from PIL import Image
+
+          ROOT = Path(".").resolve()
+          SITE = ROOT / "_site"
+          if SITE.exists():
+              shutil.rmtree(SITE)
+          SITE.mkdir(parents=True)
+
+          shutil.copy2(ROOT / ".github/pages/index.html", SITE / "index.html")
+
+          ASSET_DIRS = [
+              "Rigs", "Necromorphs", "Environment", "Weapons", "Clothing",
+              "Effects", "HUDs", "Items", "Tools", "Interface",
+              "Parallaxes", "Fonts", "Audio",
+          ]
+          STEREO_PREFIXES = (
+              "Audio/Soundtrack/",
+              "Audio/Ship_Ambience/",
+              "Audio/Dementia_And_Marker/",
+              "Audio/Story_And_Logs/",
+              "Audio/Announcements/",
+          )
+
+          for dname in ASSET_DIRS:
+              src = ROOT / dname
+              if src.is_dir():
+                  shutil.copytree(src, SITE / dname)
+
+          frames_root = SITE / "_frames"
+          frames_root.mkdir(parents=True, exist_ok=True)
+
+          rsi_entries = []
+          for rsi in sorted(ROOT.rglob("*.rsi")):
+              if ".git" in rsi.parts or "_site" in rsi.parts or not rsi.is_dir():
+                  continue
+              rel_rsi = rsi.relative_to(ROOT).as_posix()
+              meta = json.loads((rsi / "meta.json").read_text(encoding="utf-8"))
+              sx = meta["size"]["x"]
+              sy = meta["size"]["y"]
+
+              states_meta = []
+              for st in meta.get("states", []):
+                  name = st["name"]
+                  dirs = st.get("directions", 1)
+                  delays = st.get("delays")
+                  frames = max((len(d) for d in delays), default=1) if delays else 1
+
+                  src_png = rsi / f"{name}.png"
+                  st_entry = {"name": name, "dirs": dirs, "frames": frames}
+                  if delays:
+                      st_entry["delays"] = delays
+
+                  with Image.open(src_png) as im:
+                      if im.width > sx or im.height > sy:
+                          frame_rel = f"_frames/{rel_rsi}/{name}.png"
+                          frame_out = SITE / frame_rel
+                          frame_out.parent.mkdir(parents=True, exist_ok=True)
+                          im.crop((0, 0, sx, sy)).save(frame_out, format="PNG", optimize=True)
+                          st_entry["thumb"] = frame_rel
+
+                  states_meta.append(st_entry)
+
+              rsi_entries.append({
+                  "cat": rsi.relative_to(ROOT).parts[0],
+                  "path": rel_rsi,
+                  "size": [sx, sy],
+                  "states": states_meta,
+              })
+
+          transcripts = {}
+          ai_manifest = ROOT / "Audio/ishimura_ai_manifest.json"
+          if ai_manifest.is_file():
+              ai_data = json.loads(ai_manifest.read_text(encoding="utf-8"))
+              for entry in ai_data.get("files", []):
+                  transcripts[f"Audio/Announcements/Ishimura_AI_RU/{entry['file']}"] = {
+                      "speaker": "ИИ USG Ishimura",
+                      "text": entry.get("transcript", ""),
+                  }
+          studio_manifest = ROOT / "Audio/russian_studio_manifest.json"
+          if studio_manifest.is_file():
+              for entry in json.loads(studio_manifest.read_text(encoding="utf-8")):
+                  transcripts[entry["file"]] = {
+                      "speaker": entry.get("speaker", ""),
+                      "text": entry.get("text", ""),
+                  }
+
+          voice_tags = {}
+          voice_manifest = ROOT / "Audio/ai_voice_manifest.json"
+          if voice_manifest.is_file():
+              vm = json.loads(voice_manifest.read_text(encoding="utf-8"))
+              for p in vm.get("announcements_english", []):
+                  voice_tags[p] = "Системное объявление (EN)"
+              for p in vm.get("announcements_russian", []):
+                  voice_tags[p] = "Системное объявление (RU)"
+
+          audio_entries = []
+          for ogg in sorted((ROOT / "Audio").rglob("*.ogg")):
+              rel = ogg.relative_to(ROOT).as_posix()
+              item = {
+                  "cat": ogg.relative_to(ROOT / "Audio").parts[0],
+                  "path": rel,
+                  "ch": 2 if rel.startswith(STEREO_PREFIXES) else 1,
+              }
+              if rel in transcripts:
+                  item["speaker"] = transcripts[rel]["speaker"]
+                  item["text"] = transcripts[rel]["text"]
+              elif rel in voice_tags:
+                  item["speaker"] = voice_tags[rel]
+              audio_entries.append(item)
+
+          catalog = {"rsi": rsi_entries, "audio": audio_entries}
+          (SITE / "catalog.json").write_text(json.dumps(catalog, ensure_ascii=False), encoding="utf-8")
+          print(f"Pages catalog built: {len(rsi_entries)} RSIs, {len(audio_entries)} OGGs")
+          EOF
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

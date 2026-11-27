@@ -1,0 +1,312 @@
+[
+  {
+    "file": "Audio/Human_Voices/Russian/reaction_chto_eto_za_herovina.ogg",
+    "speaker": "Боец экипажа",
+    "text": "Что это за херовина?",
+    "category": "Реакция / Боевой диалог",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 1.6,
+    "size_bytes": 31294
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/combat_ono_ne_sdohlo.ogg",
+    "speaker": "Боец экипажа",
+    "text": "Оно не сдохло!",
+    "category": "Боевой выкрик",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 1.4,
+    "size_bytes": 27009
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/combat_ono_ne_otstaet_begi.ogg",
+    "speaker": "Боец экипажа",
+    "text": "Оно не отстаёт! Беги!",
+    "category": "Паника / Отступление",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 2.1,
+    "size_bytes": 44329
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/isaac_stomp_gnida_yobannaya.ogg",
+    "speaker": "Айзек Кларк (Илья Бледный)",
+    "text": "Гнида ёбанная!",
+    "category": "Боевой клич / Добивание",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 2.28,
+    "size_bytes": 47223
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/isaac_reaction_okhrenet.ogg",
+    "speaker": "Айзек Кларк (Илья Бледный)",
+    "text": "Охренеть...",
+    "category": "Шок / Реакция",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 1.6,
+    "size_bytes": 34522
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/isaac_reaction_blyat.ogg",
+    "speaker": "Айзек Кларк (Илья Бледный)",
+    "text": "Блять!",
+    "category": "Испуг / Паника",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 1.7,
+    "size_bytes": 36375
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/crew_monstry_brodyat.ogg",
+    "speaker": "Выживший член экипажа",
+    "text": "По всей Ишимуре... монстры, сука, бродят.",
+    "category": "Аудиозапись / Паника",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 5.0,
+    "size_bytes": 97755
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/hammond_chen_ne_e_et.ogg",
+    "speaker": "Зак Хэммонд (Артур Иванов)",
+    "text": "Чэнь! Не-ет!",
+    "category": "Крик отчаяния",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 2.0,
+    "size_bytes": 40836
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/kendra_isaac_idesh.ogg",
+    "speaker": "Кендра Дэниелс (Екатерина Тихомирова)",
+    "text": "Айзек, идёшь?",
+    "category": "Диалог персонажа",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 1.8,
+    "size_bytes": 35927
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/hammond_za_rabotu_isaac.ogg",
+    "speaker": "Зак Хэммонд (Артур Иванов)",
+    "text": "За работу, Айзек.",
+    "category": "Команда командира",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 1.8,
+    "size_bytes": 43305
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/mercer_ikh_prevraschenie.ogg",
+    "speaker": "Доктор Кэллус Мерсер (Константин Карасик)",
+    "text": "Их превращение... потрясающе. Это победа над смертью.",
+    "category": "Фанатизм юнитологии",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 6.1,
+    "size_bytes": 112314
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/aegis_warning_ne_prizemlyaytes.ogg",
+    "speaker": "Диспетчер колонии",
+    "text": "Не приземляйтесь! Повторяю: не приземляйтесь на Эгиду-7!",
+    "category": "Экстренная радиопередача",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 4.6,
+    "size_bytes": 90541
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Shanty/dead_space_shanty_gde_zhe_ty_kellion_ru.ogg",
+    "speaker": "Инженер экипажа (вокал)",
+    "text": "Где же ты, Келлион, где? Лети скорее мы в беде. Всё починить бы, а там пора и по домам.",
+    "category": "Шанти / Космическая песня",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 9.87,
+    "size_bytes": 147007
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/nicole_video_log_gv.ogg",
+    "speaker": "Николь Бреннан (Анна Киселёва, GamesVoice)",
+    "text": "Айзек, это я. Поговорить бы с тобой. Прости. Прости меня за всё. Мне совсем некому выговориться. Здесь всё летит к чёрту. Не верю, что это наяву.",
+    "category": "Видеопослание Николь",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 21.0,
+    "size_bytes": 359752
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/nicole_video_log_mvo.ogg",
+    "speaker": "Николь Бреннан (R.G. MVO)",
+    "text": "Айзек, это я. Поговорить бы с тобой лично. Прости меня. Прости меня за всё. Поговорить бы хоть с кем-нибудь. Тут всё летит к чертям. Не верю, что это происходит.",
+    "category": "Видеопослание Николь",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 19.0,
+    "size_bytes": 323455
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/isaac_tak_stranno.ogg",
+    "speaker": "Айзек Кларк (Илья Бледный)",
+    "text": "Так странно. Такая ведь ерунда...",
+    "category": "Реплика Айзека",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 5.3,
+    "size_bytes": 95739
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/kendra_eto_ona_nikol.ogg",
+    "speaker": "Кендра Дэниелс (Екатерина Тихомирова)",
+    "text": "Это она? Николь? Да, не отвечала несколько недель. Мы вот-вот прибудем, а ты всё переслушиваешь. Скучаешь по ней, да?",
+    "category": "Диалог Кендры",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 9.1,
+    "size_bytes": 194013
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/hammond_preduprezhden.ogg",
+    "speaker": "Зак Хэммонд (Артур Иванов)",
+    "text": "Предупреждён — значит вооружён, мисс Дэниелс.",
+    "category": "Командир Хэммонд",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 3.0,
+    "size_bytes": 56515
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/kendra_kompyuternyj_analitik.ogg",
+    "speaker": "Кендра Дэниелс (Екатерина Тихомирова)",
+    "text": "Я компьютерный аналитик. Профдеформация.",
+    "category": "Диалог Кендры",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 5.0,
+    "size_bytes": 102662
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/kellion_hail_ishimura_gv.ogg",
+    "speaker": "Пилот Келлиона (Чэнь / Джонстон)",
+    "text": "USG Ишимура, это команда аварийного обслуживания USG Келлион. Прилетели на ваш сигнал бедствия. Как слышите? Приём.",
+    "category": "Запрос стыковки",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 7.0,
+    "size_bytes": 155029
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/crew_crash_ne_slushaetsya.ogg",
+    "speaker": "Пилот Келлиона",
+    "text": "Не слушается моих команд! Блин, мы сбились с курса! Скорость не падает! Держитесь!",
+    "category": "Аварийная посадка / Паника",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 7.99,
+    "size_bytes": 161130
+  },
+  {
+    "file": "Audio/Human_Voices/Russian/crew_crash_chto_za_hernya.ogg",
+    "speaker": "Пилот Джонстон",
+    "text": "Что за херня у них с системой посадки? Нас чуть по борту не размазало!",
+    "category": "Шок после аварии",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 5.0,
+    "size_bytes": 107950
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/hammond_status_check.ogg",
+    "speaker": "Зак Хэммонд и экипаж",
+    "text": "Все целы? — В порядке. — Жить буду.",
+    "category": "Проверка экипажа",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 15.0,
+    "size_bytes": 301240
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/hammond_gde_vse.ogg",
+    "speaker": "Зак Хэммонд (Артур Иванов)",
+    "text": "Эй, люди! Куда все делись? Такую посадочку только слепой мог не заметить. Нет, там пусто.",
+    "category": "Осмотр ангара",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 20.0,
+    "size_bytes": 423975
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Characters/hammond_zhurnal_pustoy.ogg",
+    "speaker": "Зак Хэммонд (Артур Иванов)",
+    "text": "Где все охранники? Да где вообще кто-нибудь? В журнале никаких записей. Графика дежурств нет. Никаких следов...",
+    "category": "Осмотр поста охраны",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 25.0,
+    "size_bytes": 514326
+  },
+  {
+    "file": "Audio/Announcements/Russian/ishimura_computer_welcome_gv.ogg",
+    "speaker": "Бортовой ИИ Ишимуры (GamesVoice)",
+    "text": "Айзек Кларк, приветствуем вас на борту корабля USG Ишимура. ИКС синхронизирован. Получите кинезис и стазис модули у исполняющего обязанности бригадира.",
+    "category": "Оповещение ИИ / Синхронизация ИКС",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 14.0,
+    "size_bytes": 254454
+  },
+  {
+    "file": "Audio/Announcements/Russian/ishimura_computer_welcome_mvo.ogg",
+    "speaker": "Бортовой ИИ Ишимуры (R.G. MVO)",
+    "text": "Добро пожаловать на USG Ишимура, Айзек Кларк. ИКС синхронизирован. Получите модули кинезиса и стазиса у исполняющего обязанности бригадира.",
+    "category": "Оповещение ИИ / Синхронизация ИКС",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 13.0,
+    "size_bytes": 215956
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Story/cginfo_story_01_resursy_zemli_ishimura.ogg",
+    "speaker": "Рассказчик (CGInfo)",
+    "text": "К 25 веку природные ресурсы Земли были исчерпаны... Мы построили планетарные потрошители, самым известным из которых стал USG Ишимура...",
+    "category": "История вселенной Dead Space",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 29.19,
+    "size_bytes": 532225
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Story/cginfo_story_02_egida_7_i_krasnyj_obelisk.ogg",
+    "speaker": "Рассказчик (CGInfo)",
+    "text": "Добрались до Эгиды-7, планеты под запретом... Там глубоко под поверхностью мы обнаружили Красный Обелиск, ключ к бессмертию. Но он принёс не спасение...",
+    "category": "История Обелиска",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 48.0,
+    "size_bytes": 832097
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Story/cginfo_story_03_temnota_i_remontnyj_otryad.ogg",
+    "speaker": "Рассказчик (CGInfo)",
+    "text": "Тьма поглотила Ишимуру за считанные часы. Корпорация отправила небольшой ремонтный отряд. В команде был инженер Айзек Кларк, и во тьме Айзек нашёл смерть...",
+    "category": "Келлион и Айзек",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 32.0,
+    "size_bytes": 530077
+  },
+  {
+    "file": "Audio/Story_And_Logs/Russian/Story/cginfo_story_04_obelisk_menyaet_vse.ogg",
+    "speaker": "Рассказчик (CGInfo)",
+    "text": "Три года спустя он очнулся в госпитале на станции Титан. Айзек выжил, но его разум замутнён. Ибо Обелиск меняет всё...",
+    "category": "Станция Титан / Эпилог",
+    "codec": "vorbis",
+    "sample_rate": 44100,
+    "duration": 30.0,
+    "size_bytes": 533782
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "infector",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          5,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "titan_suit"
+    },
+    {
+      "name": "titan_colonel_suit"
+    },
+    {
+      "name": "edfgrunt"
+    },
+    {
+      "name": "edfengie"
+    },
+    {
+      "name": "edfmedic"
+    },
+    {
+      "name": "edfcomm"
+    },
+    {
+      "name": "unideac"
+    },
+    {
+      "name": "unifaith"
+    },
+    {
+      "name": "unizerk"
+    },
+    {
+      "name": "uniengie"
+    },
+    {
+      "name": "unimedic"
+    },
+    {
+      "name": "csecojacket"
+    },
+    {
+      "name": "csecojacket_t"
+    },
+    {
+      "name": "kellion_grunt"
+    },
+    {
+      "name": "kelliontech_jacket"
+    },
+    {
+      "name": "kelliontech_t"
+    },
+    {
+      "name": "cec_vest"
+    },
+    {
+      "name": "bio_ishi"
+    },
+    {
+      "name": "bio_ishi_t"
+    },
+    {
+      "name": "bio_black"
+    },
+    {
+      "name": "bio_black_t"
+    },
+    {
+      "name": "bio_white"
+    },
+    {
+      "name": "bio_white_t"
+    },
+    {
+      "name": "clergy"
+    },
+    {
+      "name": "clergy_t"
+    },
+    {
+      "name": "cargojacket"
+    },
+    {
+      "name": "cargojacket_t"
+    },
+    {
+      "name": "pcsi"
+    }
+  ]
+}

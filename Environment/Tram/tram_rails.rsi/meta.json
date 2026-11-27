@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "railend",
+      "directions": 4
+    },
+    {
+      "name": "rail_floor",
+      "directions": 4
+    },
+    {
+      "name": "anchor",
+      "directions": 4
+    },
+    {
+      "name": "anchor_bot"
+    },
+    {
+      "name": "rail",
+      "directions": 4
+    }
+  ]
+}

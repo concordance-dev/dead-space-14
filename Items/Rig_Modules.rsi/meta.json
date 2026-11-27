@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "module",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mod_jet",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "line"
+    },
+    {
+      "name": "tether_projectile"
+    },
+    {
+      "name": "mine_bomb",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "medhud_visor"
+    },
+    {
+      "name": "diaghud_visor"
+    },
+    {
+      "name": "sechud_visor"
+    },
+    {
+      "name": "meson_visor"
+    },
+    {
+      "name": "thermal_visor"
+    },
+    {
+      "name": "night_visor"
+    },
+    {
+      "name": "jetpack"
+    },
+    {
+      "name": "jetpack_advanced"
+    },
+    {
+      "name": "cloak"
+    },
+    {
+      "name": "pathfinder"
+    },
+    {
+      "name": "pathfinder_empty"
+    },
+    {
+      "name": "drill"
+    },
+    {
+      "name": "regulator"
+    },
+    {
+      "name": "storage"
+    },
+    {
+      "name": "storage_large"
+    },
+    {
+      "name": "storage_bluespace",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "constructor"
+    },
+    {
+      "name": "flashlight"
+    },
+    {
+      "name": "tether"
+    },
+    {
+      "name": "scanner"
+    },
+    {
+      "name": "magnet"
+    },
+    {
+      "name": "mag_harness"
+    },
+    {
+      "name": "health"
+    },
+    {
+      "name": "gps"
+    },
+    {
+      "name": "ore"
+    },
+    {
+      "name": "radshield"
+    },
+    {
+      "name": "empshield"
+    },
+    {
+      "name": "injector"
+    },
+    {
+      "name": "dnalock"
+    },
+    {
+      "name": "microwave_beam"
+    },
+    {
+      "name": "armor_booster"
+    },
+    {
+      "name": "energy_shield"
+    },
+    {
+      "name": "clamp"
+    },
+    {
+      "name": "insignia",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "apparatus"
+    },
+    {
+      "name": "organ_thrower"
+    },
+    {
+      "name": "carry"
+    },
+    {
+      "name": "welding"
+    },
+    {
+      "name": "dispenser"
+    },
+    {
+      "name": "longfall"
+    },
+    {
+      "name": "plasma_stabilizer"
+    },
+    {
+      "name": "tray"
+    },
+    {
+      "name": "teleporter"
+    },
+    {
+      "name": "teleporter-core"
+    },
+    {
+      "name": "antigrav"
+    },
+    {
+      "name": "antigrav-core"
+    },
+    {
+      "name": "kinesis"
+    },
+    {
+      "name": "kinesis-core"
+    },
+    {
+      "name": "disposal"
+    },
+    {
+      "name": "clamp_loader"
+    },
+    {
+      "name": "launch_loader"
+    },
+    {
+      "name": "magnet_loader"
+    },
+    {
+      "name": "ash_accretion"
+    },
+    {
+      "name": "sphere"
+    },
+    {
+      "name": "flamethrower"
+    },
+    {
+      "name": "pepper_shoulder"
+    },
+    {
+      "name": "holster"
+    }
+  ]
+}

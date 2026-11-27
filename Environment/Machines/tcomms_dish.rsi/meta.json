@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "dish_base"
+    },
+    {
+      "name": "dish_base_damaged"
+    },
+    {
+      "name": "dish",
+      "directions": 8
+    },
+    {
+      "name": "dish_damaged",
+      "directions": 8
+    },
+    {
+      "name": "turf"
+    }
+  ]
+}

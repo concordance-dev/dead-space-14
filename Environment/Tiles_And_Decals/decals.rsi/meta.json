@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "scaf_1"
+    },
+    {
+      "name": "scaf_2"
+    },
+    {
+      "name": "scaf_3"
+    },
+    {
+      "name": "scaf_4"
+    },
+    {
+      "name": "eagle_1"
+    },
+    {
+      "name": "eagle_2"
+    }
+  ]
+}

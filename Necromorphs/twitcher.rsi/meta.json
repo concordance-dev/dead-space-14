@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "preview"
+    },
+    {
+      "name": "twitcher_chest",
+      "directions": 4
+    },
+    {
+      "name": "twitcher_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "twitcher_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "twitcher_head",
+      "directions": 4
+    },
+    {
+      "name": "twitcher_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "twitcher_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "twitcher_chest_lying"
+    },
+    {
+      "name": "twitcher_r_leg_lying"
+    },
+    {
+      "name": "twitcher_l_leg_lying"
+    },
+    {
+      "name": "twitcher_head_lying"
+    },
+    {
+      "name": "twitcher_r_arm_lying"
+    },
+    {
+      "name": "twitcher_l_arm_lying"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tactical",
+      "directions": 4
+    },
+    {
+      "name": "ds_miner",
+      "directions": 4
+    },
+    {
+      "name": "cargo_jumpsuit",
+      "directions": 4
+    },
+    {
+      "name": "jumpsuit_v2_d",
+      "directions": 4
+    },
+    {
+      "name": "jumpsuit_v2",
+      "directions": 4
+    },
+    {
+      "name": "medic_jumpsuit_d",
+      "directions": 4
+    },
+    {
+      "name": "medic_jumpsuit",
+      "directions": 4
+    },
+    {
+      "name": "ds_director",
+      "directions": 4
+    },
+    {
+      "name": "ds_director_d",
+      "directions": 4
+    },
+    {
+      "name": "clergy",
+      "directions": 4
+    },
+    {
+      "name": "clergy_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_mechanic",
+      "directions": 4
+    },
+    {
+      "name": "ds_mechanic_d",
+      "directions": 4
+    },
+    {
+      "name": "titansec",
+      "directions": 4
+    },
+    {
+      "name": "titansec_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_captain_old",
+      "directions": 4
+    },
+    {
+      "name": "ds_firstlieutenant_old",
+      "directions": 4
+    },
+    {
+      "name": "ds_bridgeensign",
+      "directions": 4
+    },
+    {
+      "name": "ds_chief_sci_officer",
+      "directions": 4
+    },
+    {
+      "name": "ds_senior_med_officer",
+      "directions": 4
+    },
+    {
+      "name": "ds_senior_med_officer_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_research_assistant",
+      "directions": 4
+    },
+    {
+      "name": "ds_research_assistant_d",
+      "directions": 4
+    },
+    {
+      "name": "cargo_old",
+      "directions": 4
+    },
+    {
+      "name": "cargo_old_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_hydro_bot",
+      "directions": 4
+    },
+    {
+      "name": "ds_hydro_bot_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_med_doctor",
+      "directions": 4
+    },
+    {
+      "name": "ds_med_doctor_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_chemist",
+      "directions": 4
+    },
+    {
+      "name": "ds_chemist_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_securityjumpsuit",
+      "directions": 4
+    },
+    {
+      "name": "ds_securityjumpsuit_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_cseco",
+      "directions": 4
+    },
+    {
+      "name": "ds_cseco_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_securityjumpsuit_old",
+      "directions": 4
+    },
+    {
+      "name": "ds_securityjumpsuit_old_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_engineer",
+      "directions": 4
+    },
+    {
+      "name": "kellion_jumpsuit",
+      "directions": 4
+    },
+    {
+      "name": "kellion_jumpsuit_d",
+      "directions": 4
+    },
+    {
+      "name": "kellion_lead",
+      "directions": 4
+    },
+    {
+      "name": "kellion_tech",
+      "directions": 4
+    },
+    {
+      "name": "ds_engineer_old",
+      "directions": 4
+    },
+    {
+      "name": "ds_engineer_old_d",
+      "directions": 4
+    },
+    {
+      "name": "ds_rigsuit_old",
+      "directions": 4
+    },
+    {
+      "name": "rdalt",
+      "directions": 4
+    },
+    {
+      "name": "ds_flightdeck",
+      "directions": 4
+    },
+    {
+      "name": "ds_rigsuit",
+      "directions": 4
+    },
+    {
+      "name": "ds_captain_retro",
+      "directions": 4
+    },
+    {
+      "name": "ds_firstlieutenant_retro",
+      "directions": 4
+    },
+    {
+      "name": "ds_bridgeensign_retro",
+      "directions": 4
+    },
+    {
+      "name": "ds_captain",
+      "directions": 4
+    },
+    {
+      "name": "ds_firstlieutenant",
+      "directions": 4
+    }
+  ]
+}

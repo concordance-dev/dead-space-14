@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "broken0"
+    },
+    {
+      "name": "broken1"
+    },
+    {
+      "name": "broken2"
+    },
+    {
+      "name": "broken3"
+    },
+    {
+      "name": "broken4"
+    },
+    {
+      "name": "burned0"
+    },
+    {
+      "name": "burned1"
+    },
+    {
+      "name": "floorscorched1"
+    },
+    {
+      "name": "floorscorched2"
+    },
+    {
+      "name": "damaged1"
+    },
+    {
+      "name": "damaged2"
+    },
+    {
+      "name": "damaged3"
+    },
+    {
+      "name": "damaged4"
+    },
+    {
+      "name": "damaged5"
+    },
+    {
+      "name": "wood-broken"
+    },
+    {
+      "name": "wood-broken2"
+    },
+    {
+      "name": "wood-broken3"
+    },
+    {
+      "name": "wood-broken4"
+    },
+    {
+      "name": "wood-broken5"
+    },
+    {
+      "name": "wood-broken6"
+    },
+    {
+      "name": "wood-broken7"
+    },
+    {
+      "name": "eighties_damaged"
+    },
+    {
+      "name": "eightiesred_damaged"
+    },
+    {
+      "name": "light_broken"
+    },
+    {
+      "name": "glass-damaged1"
+    },
+    {
+      "name": "glass-damaged2"
+    },
+    {
+      "name": "glass-damaged3"
+    },
+    {
+      "name": "carpetdamaged"
+    },
+    {
+      "name": "blackcarpetdamaged"
+    },
+    {
+      "name": "bluecarpetdamaged"
+    },
+    {
+      "name": "cyancarpetdamaged"
+    },
+    {
+      "name": "greencarpetdamaged"
+    },
+    {
+      "name": "orangecarpetdamaged"
+    },
+    {
+      "name": "purplecarpetdamaged"
+    },
+    {
+      "name": "redcarpetdamaged"
+    },
+    {
+      "name": "royalblackcarpetdamaged"
+    },
+    {
+      "name": "royalbluecarpetdamaged"
+    },
+    {
+      "name": "tram_platform-damaged2"
+    },
+    {
+      "name": "cultdamage"
+    },
+    {
+      "name": "cultdamage2"
+    },
+    {
+      "name": "cultdamage3"
+    },
+    {
+      "name": "cultdamage4"
+    },
+    {
+      "name": "cultdamage5"
+    },
+    {
+      "name": "cultdamage6"
+    },
+    {
+      "name": "cultdamage7"
+    },
+    {
+      "name": "silver_dam"
+    },
+    {
+      "name": "gold_dam"
+    },
+    {
+      "name": "diamond_dam"
+    },
+    {
+      "name": "plasma_dam"
+    },
+    {
+      "name": "uranium_dam"
+    }
+  ]
+}

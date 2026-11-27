@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "ds_bio_black",
+      "directions": 4
+    },
+    {
+      "name": "ds_bio_black_lying"
+    },
+    {
+      "name": "ds_bio_white",
+      "directions": 4
+    },
+    {
+      "name": "ds_bio_white_lying"
+    },
+    {
+      "name": "bio_ishi",
+      "directions": 4
+    },
+    {
+      "name": "bio_ishi_lying"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ripper",
+      "directions": 4
+    },
+    {
+      "name": "pulserifle-wielded",
+      "directions": 4
+    },
+    {
+      "name": "pulserifle_egov-wielded",
+      "directions": 4
+    },
+    {
+      "name": "pulserifle",
+      "directions": 4
+    },
+    {
+      "name": "pulserifle_egov",
+      "directions": 4
+    },
+    {
+      "name": "bullpuprifle-wielded",
+      "directions": 4
+    },
+    {
+      "name": "bullpuprifle",
+      "directions": 4
+    },
+    {
+      "name": "seeker-wielded",
+      "directions": 4
+    },
+    {
+      "name": "seeker",
+      "directions": 4
+    },
+    {
+      "name": "forcegun-wielded",
+      "directions": 4
+    },
+    {
+      "name": "forcegun",
+      "directions": 4
+    },
+    {
+      "name": "contact-wielded",
+      "directions": 4
+    },
+    {
+      "name": "contact",
+      "directions": 4
+    },
+    {
+      "name": "linecutter",
+      "directions": 4
+    },
+    {
+      "name": "linecutter_open",
+      "directions": 4
+    },
+    {
+      "name": "heavypulserifle",
+      "directions": 4
+    },
+    {
+      "name": "heavypulserifle-wielded",
+      "directions": 4
+    },
+    {
+      "name": "rivetgun",
+      "directions": 4
+    },
+    {
+      "name": "detonator-wielded",
+      "directions": 4
+    },
+    {
+      "name": "detonator",
+      "directions": 4
+    },
+    {
+      "name": "hydetorch",
+      "directions": 4
+    },
+    {
+      "name": "hydetorch_lit",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "plasmacutter",
+      "directions": 4
+    },
+    {
+      "name": "scl_shotgun_mag",
+      "directions": 4
+    },
+    {
+      "name": "scl_shotgun",
+      "directions": 4
+    },
+    {
+      "name": "scl_shotgun_wielded",
+      "directions": 4
+    },
+    {
+      "name": "scl_shotgun_wielded_mag",
+      "directions": 4
+    },
+    {
+      "name": "javelin_p-wielded",
+      "directions": 4
+    },
+    {
+      "name": "javelin_p",
+      "directions": 4
+    },
+    {
+      "name": "hrrevolver",
+      "directions": 4
+    },
+    {
+      "name": "mahadguntitan",
+      "directions": 4
+    },
+    {
+      "name": "divet",
+      "directions": 4
+    },
+    {
+      "name": "divet_spec",
+      "directions": 4
+    },
+    {
+      "name": "javelin",
+      "directions": 4
+    },
+    {
+      "name": "javelin_wielded",
+      "directions": 4
+    },
+    {
+      "name": "javelin_mag",
+      "directions": 4
+    },
+    {
+      "name": "javelin_wielded_mag",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "plasma_mine_light",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "plasma_mine_base",
+      "delays": [
+        [
+          0.42,
+          0.42,
+          0.42,
+          0.42,
+          0.42,
+          0.42,
+          0.42,
+          0.42,
+          0.42,
+          0.42,
+          0.42,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "detonator_mine_deployed",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.3,
+          0.1,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "detonator_mine_undeploy",
+      "delays": [
+        [
+          0.075,
+          0.075,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "detonator_mine"
+    }
+  ]
+}

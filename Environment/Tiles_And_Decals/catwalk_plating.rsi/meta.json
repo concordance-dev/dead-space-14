@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "combined_example"
+    },
+    {
+      "name": "maint"
+    },
+    {
+      "name": "iron"
+    },
+    {
+      "name": "whiteiron"
+    },
+    {
+      "name": "darkiron"
+    },
+    {
+      "name": "flatwhite"
+    },
+    {
+      "name": "titanium"
+    },
+    {
+      "name": "smoothiron"
+    },
+    {
+      "name": "lattice"
+    }
+  ]
+}

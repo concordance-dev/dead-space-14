@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "wall-0"
+    },
+    {
+      "name": "wall-1"
+    },
+    {
+      "name": "wall-2"
+    },
+    {
+      "name": "wall-3"
+    },
+    {
+      "name": "wall-4"
+    },
+    {
+      "name": "wall-5"
+    },
+    {
+      "name": "wall-6"
+    },
+    {
+      "name": "wall-7"
+    },
+    {
+      "name": "wall-8"
+    },
+    {
+      "name": "wall-9"
+    },
+    {
+      "name": "wall-10"
+    },
+    {
+      "name": "wall-11"
+    },
+    {
+      "name": "wall-12"
+    },
+    {
+      "name": "wall-13"
+    },
+    {
+      "name": "wall-14"
+    },
+    {
+      "name": "wall-15"
+    },
+    {
+      "name": "wall-21"
+    },
+    {
+      "name": "wall-23"
+    },
+    {
+      "name": "wall-29"
+    },
+    {
+      "name": "wall-31"
+    },
+    {
+      "name": "wall-38"
+    },
+    {
+      "name": "wall-39"
+    },
+    {
+      "name": "wall-46"
+    },
+    {
+      "name": "wall-47"
+    },
+    {
+      "name": "wall-55"
+    },
+    {
+      "name": "wall-63"
+    },
+    {
+      "name": "wall-74"
+    },
+    {
+      "name": "wall-75"
+    },
+    {
+      "name": "wall-78"
+    },
+    {
+      "name": "wall-79"
+    },
+    {
+      "name": "wall-95"
+    },
+    {
+      "name": "wall-110"
+    },
+    {
+      "name": "wall-111"
+    },
+    {
+      "name": "wall-127"
+    },
+    {
+      "name": "wall-137"
+    },
+    {
+      "name": "wall-139"
+    },
+    {
+      "name": "wall-141"
+    },
+    {
+      "name": "wall-143"
+    },
+    {
+      "name": "wall-157"
+    },
+    {
+      "name": "wall-159"
+    },
+    {
+      "name": "wall-175"
+    },
+    {
+      "name": "wall-191"
+    },
+    {
+      "name": "wall-203"
+    },
+    {
+      "name": "wall-207"
+    },
+    {
+      "name": "wall-223"
+    },
+    {
+      "name": "wall-239"
+    },
+    {
+      "name": "wall-255"
+    },
+    {
+      "name": "shine-0"
+    },
+    {
+      "name": "shine-1"
+    },
+    {
+      "name": "shine-2"
+    },
+    {
+      "name": "shine-3"
+    },
+    {
+      "name": "shine-4"
+    },
+    {
+      "name": "shine-5"
+    },
+    {
+      "name": "shine-6"
+    },
+    {
+      "name": "shine-7"
+    },
+    {
+      "name": "shine-8"
+    },
+    {
+      "name": "shine-9"
+    },
+    {
+      "name": "shine-10"
+    },
+    {
+      "name": "shine-11"
+    },
+    {
+      "name": "shine-12"
+    },
+    {
+      "name": "shine-13"
+    },
+    {
+      "name": "shine-14"
+    },
+    {
+      "name": "shine-15"
+    },
+    {
+      "name": "shine-21"
+    },
+    {
+      "name": "shine-23"
+    },
+    {
+      "name": "shine-29"
+    },
+    {
+      "name": "shine-31"
+    },
+    {
+      "name": "shine-38"
+    },
+    {
+      "name": "shine-39"
+    },
+    {
+      "name": "shine-46"
+    },
+    {
+      "name": "shine-47"
+    },
+    {
+      "name": "shine-55"
+    },
+    {
+      "name": "shine-63"
+    },
+    {
+      "name": "shine-74"
+    },
+    {
+      "name": "shine-75"
+    },
+    {
+      "name": "shine-78"
+    },
+    {
+      "name": "shine-79"
+    },
+    {
+      "name": "shine-95"
+    },
+    {
+      "name": "shine-110"
+    },
+    {
+      "name": "shine-111"
+    },
+    {
+      "name": "shine-127"
+    },
+    {
+      "name": "shine-137"
+    },
+    {
+      "name": "shine-139"
+    },
+    {
+      "name": "shine-141"
+    },
+    {
+      "name": "shine-143"
+    },
+    {
+      "name": "shine-157"
+    },
+    {
+      "name": "shine-159"
+    },
+    {
+      "name": "shine-175"
+    },
+    {
+      "name": "shine-191"
+    },
+    {
+      "name": "shine-203"
+    },
+    {
+      "name": "shine-207"
+    },
+    {
+      "name": "shine-223"
+    },
+    {
+      "name": "shine-239"
+    },
+    {
+      "name": "shine-255"
+    }
+  ]
+}

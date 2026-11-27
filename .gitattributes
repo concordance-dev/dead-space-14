@@ -1,0 +1,17 @@
+* text=auto
+
+# Бинарные ассеты
+*.png binary
+*.ogg binary
+*.ico binary
+*.ttf binary
+*.otf binary
+
+# Документация и метаданные
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+LICENSE-* text eol=lf

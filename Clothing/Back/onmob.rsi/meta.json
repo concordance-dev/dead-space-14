@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "big_wrench0",
+      "directions": 4
+    },
+    {
+      "name": "bullpuprifle",
+      "directions": 4
+    },
+    {
+      "name": "seeker",
+      "directions": 4
+    },
+    {
+      "name": "forcegun",
+      "directions": 4
+    },
+    {
+      "name": "pulserifle",
+      "directions": 4
+    },
+    {
+      "name": "pulserifle_egov",
+      "directions": 4
+    },
+    {
+      "name": "contact",
+      "directions": 4
+    },
+    {
+      "name": "lurker_shell",
+      "directions": 4
+    },
+    {
+      "name": "heavypulserifle",
+      "directions": 4
+    },
+    {
+      "name": "javelin_p",
+      "directions": 4
+    },
+    {
+      "name": "javelin",
+      "directions": 4
+    },
+    {
+      "name": "scl_shotgun",
+      "directions": 4
+    }
+  ]
+}

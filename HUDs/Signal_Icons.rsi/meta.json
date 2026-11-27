@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "scry"
+    },
+    {
+      "name": "tracer"
+    },
+    {
+      "name": "flicker"
+    },
+    {
+      "name": "mass_flicker"
+    },
+    {
+      "name": "blowout"
+    },
+    {
+      "name": "false_sound"
+    },
+    {
+      "name": "whisper"
+    },
+    {
+      "name": "meddle"
+    },
+    {
+      "name": "writing"
+    },
+    {
+      "name": "rune"
+    }
+  ]
+}

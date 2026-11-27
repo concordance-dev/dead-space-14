@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ripper_projectile",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "sawblade_projectile",
+      "delays": [
+        [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      ]
+    },
+    {
+      "name": "diamond_projectile",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "impact_acid_1"
+    },
+    {
+      "name": "impact_acid_2"
+    },
+    {
+      "name": "impact_acid_3"
+    },
+    {
+      "name": "impact_acid_4"
+    },
+    {
+      "name": "rivet_embed"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "brute",
+      "directions": 4
+    },
+    {
+      "name": "leaper",
+      "directions": 4
+    },
+    {
+      "name": "ubermorph",
+      "directions": 4
+    }
+  ]
+}

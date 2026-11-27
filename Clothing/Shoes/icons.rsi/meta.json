@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "combat"
+    },
+    {
+      "name": "unideac_rig"
+    },
+    {
+      "name": "kellion_grunt_boots"
+    },
+    {
+      "name": "kellion_lead_boots"
+    },
+    {
+      "name": "flightdeck_boots"
+    },
+    {
+      "name": "engineer_boots"
+    }
+  ]
+}

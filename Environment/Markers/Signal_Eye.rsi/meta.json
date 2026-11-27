@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "markersignal-"
+    },
+    {
+      "name": "markersignal-1"
+    },
+    {
+      "name": "markersignal-2"
+    },
+    {
+      "name": "markersignal-3"
+    },
+    {
+      "name": "markersignal-4"
+    },
+    {
+      "name": "markersignal-5"
+    },
+    {
+      "name": "markersignal-6"
+    },
+    {
+      "name": "markersignal-7"
+    },
+    {
+      "name": "markersignal-8"
+    },
+    {
+      "name": "markersignal-9"
+    },
+    {
+      "name": "markersignal-10"
+    },
+    {
+      "name": "markersignal-11"
+    },
+    {
+      "name": "markersignal-12"
+    },
+    {
+      "name": "markersignal-13"
+    },
+    {
+      "name": "markersignal-14"
+    },
+    {
+      "name": "markersignal-15"
+    },
+    {
+      "name": "markersignal-16"
+    },
+    {
+      "name": "markersignal-17"
+    },
+    {
+      "name": "markersignal-18"
+    },
+    {
+      "name": "markersignal-19"
+    },
+    {
+      "name": "markersignal-20"
+    },
+    {
+      "name": "markersignal-21"
+    },
+    {
+      "name": "markersignal-22"
+    },
+    {
+      "name": "markersignal-23"
+    },
+    {
+      "name": "markersignal-24"
+    },
+    {
+      "name": "markersignal-25"
+    }
+  ]
+}

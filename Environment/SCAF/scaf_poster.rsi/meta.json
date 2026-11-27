@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "poster_being_set",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "poster_ripped"
+    },
+    {
+      "name": "ladder"
+    },
+    {
+      "name": "scaf"
+    },
+    {
+      "name": "load"
+    },
+    {
+      "name": "secessionist"
+    },
+    {
+      "name": "enemy"
+    },
+    {
+      "name": "target"
+    },
+    {
+      "name": "forces"
+    },
+    {
+      "name": "sovereign"
+    },
+    {
+      "name": "rolled_poster"
+    },
+    {
+      "name": "rolled_poster_legit"
+    },
+    {
+      "name": "hand"
+    }
+  ]
+}

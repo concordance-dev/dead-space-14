@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "titansec_workgloves",
+      "directions": 4
+    },
+    {
+      "name": "edfgrunt_rig",
+      "directions": 4
+    },
+    {
+      "name": "edfgrunt_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "edfengie_rig",
+      "directions": 4
+    },
+    {
+      "name": "edfengie_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "edfmedic_rig",
+      "directions": 4
+    },
+    {
+      "name": "edfmedic_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "edfcomm_rig",
+      "directions": 4
+    },
+    {
+      "name": "edfcomm_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "unideac_rig",
+      "directions": 4
+    },
+    {
+      "name": "unideac_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "unifaith_rig",
+      "directions": 4
+    },
+    {
+      "name": "unifaith_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "uniengie_rig",
+      "directions": 4
+    },
+    {
+      "name": "uniengie_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "unizerk_rig",
+      "directions": 4
+    },
+    {
+      "name": "unizerk_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "unimedic_rig",
+      "directions": 4
+    },
+    {
+      "name": "unimedic_rig_sealed",
+      "directions": 4
+    },
+    {
+      "name": "combat",
+      "directions": 4
+    },
+    {
+      "name": "pcsi",
+      "directions": 4
+    },
+    {
+      "name": "edfgloves",
+      "directions": 4
+    },
+    {
+      "name": "grunt_gloves",
+      "directions": 4
+    }
+  ]
+}

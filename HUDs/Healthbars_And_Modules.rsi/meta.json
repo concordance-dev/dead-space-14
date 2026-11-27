@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "healthbar_100",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_90",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_80",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_70",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_60",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_50",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_40",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_30",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_20",
+      "directions": 4
+    },
+    {
+      "name": "healthbar_10",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "healthbar_0",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "ball_mask"
+    },
+    {
+      "name": "module_light",
+      "directions": 4
+    },
+    {
+      "name": "module_light_on",
+      "directions": 4
+    },
+    {
+      "name": "module_apparatus",
+      "directions": 4
+    },
+    {
+      "name": "module_welding",
+      "directions": 4
+    },
+    {
+      "name": "module_jetpack",
+      "directions": 4
+    },
+    {
+      "name": "module_jetpack_on",
+      "directions": 4
+    },
+    {
+      "name": "module_jetpackadv",
+      "directions": 4
+    },
+    {
+      "name": "module_jetpackadv_on",
+      "directions": 4
+    },
+    {
+      "name": "module_plasma",
+      "directions": 4
+    },
+    {
+      "name": "module_kinesis",
+      "directions": 4
+    },
+    {
+      "name": "module_kinesis_on",
+      "directions": 4
+    },
+    {
+      "name": "module_clamp",
+      "directions": 4
+    },
+    {
+      "name": "module_clamp_on",
+      "directions": 4
+    },
+    {
+      "name": "module_drill",
+      "directions": 4
+    },
+    {
+      "name": "module_ash-mining",
+      "directions": 4
+    },
+    {
+      "name": "module_ash-asteroid",
+      "directions": 4
+    },
+    {
+      "name": "module_armorbooster_off-elite",
+      "directions": 4
+    },
+    {
+      "name": "module_armorbooster_on-elite",
+      "directions": 4
+    },
+    {
+      "name": "module_hydraulic",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "module_hydraulic_active",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "module_clamp_loader",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "module_magnet",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "module_flamethrower",
+      "directions": 4
+    },
+    {
+      "name": "module_flamethrower_on",
+      "directions": 4,
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ],
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ],
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ],
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
+    },
+    {
+      "name": "module_pepper",
+      "directions": 4
+    },
+    {
+      "name": "module_pepper_used",
+      "directions": 4
+    },
+    {
+      "name": "standard-control-sealed",
+      "directions": 4
+    },
+    {
+      "name": "standard-control",
+      "directions": 4
+    }
+  ]
+}

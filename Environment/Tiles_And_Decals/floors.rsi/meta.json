@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "dank_tile"
+    },
+    {
+      "name": "dank_roller"
+    },
+    {
+      "name": "dank_plating"
+    },
+    {
+      "name": "dank_tile_heavy"
+    },
+    {
+      "name": "dank"
+    },
+    {
+      "name": "roller"
+    },
+    {
+      "name": "dank_heavy"
+    },
+    {
+      "name": "dank_tile_medical"
+    },
+    {
+      "name": "dank_medical"
+    },
+    {
+      "name": "dank_tile_mono"
+    },
+    {
+      "name": "dank_mono"
+    },
+    {
+      "name": "bathroom"
+    },
+    {
+      "name": "grille-spare1"
+    },
+    {
+      "name": "grille-spare2"
+    },
+    {
+      "name": "grille-spare3"
+    },
+    {
+      "name": "grille-spare4"
+    },
+    {
+      "name": "rivets_held"
+    },
+    {
+      "name": "slashed_held"
+    },
+    {
+      "name": "slashed_odd_held"
+    },
+    {
+      "name": "rivets_olderer"
+    },
+    {
+      "name": "rivets_old"
+    },
+    {
+      "name": "rivets_old_edges",
+      "directions": 8
+    },
+    {
+      "name": "rivets_old_corners",
+      "directions": 8
+    },
+    {
+      "name": "slashed"
+    },
+    {
+      "name": "slashed0"
+    },
+    {
+      "name": "slashed1"
+    },
+    {
+      "name": "slashed2"
+    },
+    {
+      "name": "slashed3"
+    },
+    {
+      "name": "slashed_edges",
+      "directions": 8
+    },
+    {
+      "name": "slashed_corners",
+      "directions": 8
+    },
+    {
+      "name": "slashed_odd"
+    },
+    {
+      "name": "slashed_odd0"
+    },
+    {
+      "name": "slashed_odd1"
+    },
+    {
+      "name": "slashed_odd2"
+    },
+    {
+      "name": "slashed_odd3",
+      "directions": 4
+    },
+    {
+      "name": "slashed_odd_edges",
+      "directions": 8
+    },
+    {
+      "name": "slashed_odd_corners",
+      "directions": 8
+    },
+    {
+      "name": "rivets_edges",
+      "directions": 8
+    },
+    {
+      "name": "rivets_corners",
+      "directions": 8
+    },
+    {
+      "name": "old"
+    },
+    {
+      "name": "old1"
+    },
+    {
+      "name": "old2"
+    },
+    {
+      "name": "old3"
+    },
+    {
+      "name": "old4"
+    },
+    {
+      "name": "old5"
+    },
+    {
+      "name": "rivets"
+    },
+    {
+      "name": "rivets0"
+    },
+    {
+      "name": "rivets1"
+    },
+    {
+      "name": "rivets2"
+    },
+    {
+      "name": "rivets3"
+    },
+    {
+      "name": "rivets4"
+    },
+    {
+      "name": "hardwood_alt"
+    },
+    {
+      "name": "hardwood"
+    },
+    {
+      "name": "tech",
+      "directions": 4
+    },
+    {
+      "name": "tech0",
+      "directions": 4
+    },
+    {
+      "name": "tech1",
+      "directions": 4
+    },
+    {
+      "name": "tech2",
+      "directions": 4
+    },
+    {
+      "name": "tech3",
+      "directions": 4
+    },
+    {
+      "name": "tech4",
+      "directions": 4
+    },
+    {
+      "name": "tech5",
+      "directions": 4
+    },
+    {
+      "name": "tech6",
+      "directions": 4
+    },
+    {
+      "name": "golf_gray"
+    },
+    {
+      "name": "golf_gray0"
+    },
+    {
+      "name": "golf_gray1"
+    },
+    {
+      "name": "golf_gray2"
+    },
+    {
+      "name": "golf_gray3"
+    },
+    {
+      "name": "golf_gray4"
+    },
+    {
+      "name": "golf_gray5"
+    },
+    {
+      "name": "golf_gray6"
+    },
+    {
+      "name": "golf_brown"
+    },
+    {
+      "name": "golf_brown0"
+    },
+    {
+      "name": "golf_brown1"
+    },
+    {
+      "name": "golf_brown2"
+    },
+    {
+      "name": "golf_brown3"
+    },
+    {
+      "name": "golf_brown4"
+    },
+    {
+      "name": "golf_brown5"
+    },
+    {
+      "name": "golf_brown6"
+    },
+    {
+      "name": "maint_left",
+      "directions": 4
+    },
+    {
+      "name": "maint_left0",
+      "directions": 4
+    },
+    {
+      "name": "maint_left1",
+      "directions": 4
+    },
+    {
+      "name": "maint_left2",
+      "directions": 4
+    },
+    {
+      "name": "maint_left3",
+      "directions": 4
+    },
+    {
+      "name": "maint_left4",
+      "directions": 4
+    },
+    {
+      "name": "maint_center",
+      "directions": 4
+    },
+    {
+      "name": "maint_center0",
+      "directions": 4
+    },
+    {
+      "name": "maint_center1",
+      "directions": 4
+    },
+    {
+      "name": "maint_center2",
+      "directions": 4
+    },
+    {
+      "name": "maint_center3",
+      "directions": 4
+    },
+    {
+      "name": "maint_center4",
+      "directions": 4
+    },
+    {
+      "name": "maint_right",
+      "directions": 4
+    },
+    {
+      "name": "maint_right0",
+      "directions": 4
+    },
+    {
+      "name": "maint_right1",
+      "directions": 4
+    },
+    {
+      "name": "maint_right2",
+      "directions": 4
+    },
+    {
+      "name": "maint_right3",
+      "directions": 4
+    },
+    {
+      "name": "maint_right4",
+      "directions": 4
+    },
+    {
+      "name": "1_ornate"
+    },
+    {
+      "name": "2_ornate"
+    },
+    {
+      "name": "3_ornate"
+    },
+    {
+      "name": "4_ornate"
+    },
+    {
+      "name": "5_ornate"
+    },
+    {
+      "name": "6_ornate"
+    },
+    {
+      "name": "7_ornate"
+    },
+    {
+      "name": "8_ornate"
+    },
+    {
+      "name": "1_ornate0"
+    },
+    {
+      "name": "2_ornate0"
+    },
+    {
+      "name": "3_ornate0"
+    },
+    {
+      "name": "4_ornate0"
+    },
+    {
+      "name": "5_ornate0"
+    },
+    {
+      "name": "6_ornate0"
+    },
+    {
+      "name": "7_ornate0"
+    },
+    {
+      "name": "8_ornate0"
+    },
+    {
+      "name": "rectangles"
+    },
+    {
+      "name": "rectangles0"
+    },
+    {
+      "name": "rectangles1"
+    },
+    {
+      "name": "rectangles2"
+    },
+    {
+      "name": "rectangles3"
+    },
+    {
+      "name": "rectangles4"
+    },
+    {
+      "name": "rectangles5"
+    },
+    {
+      "name": "rectangles6"
+    },
+    {
+      "name": "slides",
+      "directions": 4
+    },
+    {
+      "name": "slides0",
+      "directions": 4
+    },
+    {
+      "name": "slides1",
+      "directions": 4
+    },
+    {
+      "name": "slides2",
+      "directions": 4
+    },
+    {
+      "name": "slides3",
+      "directions": 4
+    },
+    {
+      "name": "slides4",
+      "directions": 4
+    },
+    {
+      "name": "slides5",
+      "directions": 4
+    },
+    {
+      "name": "slides6",
+      "directions": 4
+    },
+    {
+      "name": "slides_end",
+      "directions": 4
+    },
+    {
+      "name": "slides_end0",
+      "directions": 4
+    },
+    {
+      "name": "slides_end1",
+      "directions": 4
+    },
+    {
+      "name": "slides_end2",
+      "directions": 4
+    },
+    {
+      "name": "slides_end3",
+      "directions": 4
+    },
+    {
+      "name": "slides_end4",
+      "directions": 4
+    },
+    {
+      "name": "slides_end5",
+      "directions": 4
+    },
+    {
+      "name": "slides_end6",
+      "directions": 4
+    },
+    {
+      "name": "grate"
+    },
+    {
+      "name": "grater"
+    },
+    {
+      "name": "cable_start",
+      "directions": 4
+    },
+    {
+      "name": "cable",
+      "directions": 4
+    },
+    {
+      "name": "cable_end",
+      "directions": 4
+    },
+    {
+      "name": "corner_exterior",
+      "directions": 4
+    },
+    {
+      "name": "corner_interior",
+      "directions": 4
+    },
+    {
+      "name": "medhallway",
+      "directions": 4
+    },
+    {
+      "name": "medhallway_corners",
+      "directions": 4
+    },
+    {
+      "name": "medhallway_2",
+      "directions": 4
+    },
+    {
+      "name": "triage"
+    },
+    {
+      "name": "r_medside"
+    },
+    {
+      "name": "l_medside"
+    },
+    {
+      "name": "med_plating"
+    },
+    {
+      "name": "hallway_small"
+    },
+    {
+      "name": "h_hallway_small"
+    },
+    {
+      "name": "medsolo"
+    },
+    {
+      "name": "white_medsolo"
+    },
+    {
+      "name": "v_leftside"
+    },
+    {
+      "name": "v_leftside0"
+    },
+    {
+      "name": "v_leftside1"
+    },
+    {
+      "name": "v_rightside"
+    },
+    {
+      "name": "v_rightside0"
+    },
+    {
+      "name": "v_rightside1"
+    },
+    {
+      "name": "h_leftside"
+    },
+    {
+      "name": "h_leftside0"
+    },
+    {
+      "name": "h_leftside1"
+    },
+    {
+      "name": "h_rightside"
+    },
+    {
+      "name": "h_rightside0"
+    },
+    {
+      "name": "h_rightside1"
+    },
+    {
+      "name": "medhallway_corners_2",
+      "directions": 4
+    },
+    {
+      "name": "triage_sides",
+      "directions": 4
+    },
+    {
+      "name": "triage_white"
+    },
+    {
+      "name": "triage_internalcorners",
+      "directions": 4
+    },
+    {
+      "name": "triage_corners",
+      "directions": 4
+    },
+    {
+      "name": "side_med",
+      "directions": 4
+    },
+    {
+      "name": "side_med_corners",
+      "directions": 4
+    },
+    {
+      "name": "tramgrating",
+      "directions": 4
+    },
+    {
+      "name": "side_med_inv_corner",
+      "directions": 4
+    }
+  ]
+}

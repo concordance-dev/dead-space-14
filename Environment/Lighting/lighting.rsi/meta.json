@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tube",
+      "directions": 4
+    },
+    {
+      "name": "tube-empty",
+      "directions": 4
+    },
+    {
+      "name": "tube-burned",
+      "directions": 4
+    },
+    {
+      "name": "tube-broken",
+      "directions": 4
+    },
+    {
+      "name": "tube_emergency",
+      "directions": 4,
+      "delays": [
+        [
+          0.4,
+          0.5
+        ],
+        [
+          0.4,
+          0.5
+        ],
+        [
+          0.4,
+          0.5
+        ],
+        [
+          0.4,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "ltube"
+    },
+    {
+      "name": "ltube-burned"
+    },
+    {
+      "name": "ltube-broken"
+    },
+    {
+      "name": "bulb",
+      "directions": 4
+    },
+    {
+      "name": "bulb_emergency",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bulb-broken",
+      "directions": 4
+    },
+    {
+      "name": "bulb-empty",
+      "directions": 4
+    },
+    {
+      "name": "bulb-burned",
+      "directions": 4
+    },
+    {
+      "name": "lbulb"
+    },
+    {
+      "name": "lbulb-burned"
+    },
+    {
+      "name": "lbulb-broken"
+    },
+    {
+      "name": "floor"
+    },
+    {
+      "name": "floor-empty"
+    },
+    {
+      "name": "floor-burned"
+    },
+    {
+      "name": "floor-broken"
+    },
+    {
+      "name": "firelight1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "firelight0",
+      "directions": 4
+    },
+    {
+      "name": "firelight-broken",
+      "directions": 4
+    },
+    {
+      "name": "flight"
+    },
+    {
+      "name": "flight-broken"
+    },
+    {
+      "name": "tube-construct-stage1",
+      "directions": 4
+    },
+    {
+      "name": "bulb-construct-stage1",
+      "directions": 4
+    },
+    {
+      "name": "tube-construct-stage2",
+      "directions": 4
+    },
+    {
+      "name": "bulb-construct-stage2",
+      "directions": 4
+    },
+    {
+      "name": "tube-construct-item",
+      "directions": 4
+    },
+    {
+      "name": "bulb-construct-item",
+      "directions": 4
+    },
+    {
+      "name": "flashlight"
+    },
+    {
+      "name": "flashlight-on"
+    },
+    {
+      "name": "lamp"
+    },
+    {
+      "name": "lamp-on"
+    },
+    {
+      "name": "lampgreen"
+    },
+    {
+      "name": "lampgreen-on"
+    },
+    {
+      "name": "lantern"
+    },
+    {
+      "name": "lantern-on"
+    },
+    {
+      "name": "flare-on",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "flare-empty"
+    },
+    {
+      "name": "flare"
+    },
+    {
+      "name": "penlight"
+    },
+    {
+      "name": "penlight_surgical"
+    },
+    {
+      "name": "penlight-on"
+    },
+    {
+      "name": "penlight_surgical-on"
+    },
+    {
+      "name": "seclite"
+    },
+    {
+      "name": "seclite-on"
+    },
+    {
+      "name": "bulb2",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "tube2",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "lantern-blue"
+    },
+    {
+      "name": "orb",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "random_glowstick"
+    },
+    {
+      "name": "glowstick"
+    },
+    {
+      "name": "glowstick-empty"
+    },
+    {
+      "name": "glowstick-on",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "glowstick-glow"
+    },
+    {
+      "name": "floodlight_on"
+    },
+    {
+      "name": "floodlight"
+    },
+    {
+      "name": "Floodlight Burned"
+    },
+    {
+      "name": "Floodlight Broken"
+    },
+    {
+      "name": "floodlight_c3"
+    },
+    {
+      "name": "floodlight_c1"
+    },
+    {
+      "name": "floodlight_c2"
+    },
+    {
+      "name": "marker"
+    },
+    {
+      "name": "markerrandom"
+    },
+    {
+      "name": "markerburgundy-on"
+    },
+    {
+      "name": "markerburgundy"
+    },
+    {
+      "name": "markerbronze-on"
+    },
+    {
+      "name": "markerbronze"
+    },
+    {
+      "name": "markeryellow-on"
+    },
+    {
+      "name": "markeryellow"
+    },
+    {
+      "name": "markerlime-on"
+    },
+    {
+      "name": "markerlime"
+    },
+    {
+      "name": "markerolive-on"
+    },
+    {
+      "name": "markerolive"
+    },
+    {
+      "name": "markerjade-on"
+    },
+    {
+      "name": "markerjade"
+    },
+    {
+      "name": "markerteal-on"
+    },
+    {
+      "name": "markerteal"
+    },
+    {
+      "name": "markercerulean-on"
+    },
+    {
+      "name": "markercerulean"
+    },
+    {
+      "name": "markerindigo-on"
+    },
+    {
+      "name": "markerindigo"
+    },
+    {
+      "name": "markerpurple-on"
+    },
+    {
+      "name": "markerpurple"
+    },
+    {
+      "name": "markerviolet-on"
+    },
+    {
+      "name": "markerviolet"
+    },
+    {
+      "name": "markerfuchsia-on"
+    },
+    {
+      "name": "markerfuchsia"
+    }
+  ]
+}

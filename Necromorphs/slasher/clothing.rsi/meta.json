@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "ds_securityjumpsuit_s",
+      "directions": 4
+    },
+    {
+      "name": "ds_miner_s",
+      "directions": 4
+    },
+    {
+      "name": "ds_securityjumpsuit_lying_s"
+    },
+    {
+      "name": "ds_miner_lying_s"
+    },
+    {
+      "name": "ds_bio_black_lying"
+    },
+    {
+      "name": "ds_bio_black_t_lying"
+    },
+    {
+      "name": "ds_bio_black",
+      "directions": 4
+    },
+    {
+      "name": "ds_bio_black_t",
+      "directions": 4
+    },
+    {
+      "name": "ds_bio_white_t_lying"
+    },
+    {
+      "name": "ds_bio_white_lying"
+    },
+    {
+      "name": "ds_bio_white_t",
+      "directions": 4
+    },
+    {
+      "name": "ds_bio_white",
+      "directions": 4
+    },
+    {
+      "name": "ds_med_doctor_s",
+      "directions": 4
+    },
+    {
+      "name": "ds_med_doctor_lying_s"
+    },
+    {
+      "name": "ds_captain_s",
+      "directions": 4
+    },
+    {
+      "name": "ds_captain_lying_s"
+    },
+    {
+      "name": "ds_firstlieutenant_s",
+      "directions": 4
+    },
+    {
+      "name": "ds_firstlieutenant_lying_s"
+    },
+    {
+      "name": "rig-engineering",
+      "directions": 4,
+      "delays": [
+        [
+          4.0,
+          0.07,
+          0.07,
+          0.07,
+          0.07,
+          0.07
+        ],
+        [
+          4.0,
+          0.07,
+          0.07,
+          0.07,
+          0.07,
+          0.07
+        ],
+        [
+          4.0,
+          0.07,
+          0.07,
+          0.07,
+          0.07,
+          0.07
+        ],
+        [
+          4.0,
+          0.07,
+          0.07,
+          0.07,
+          0.07,
+          0.07
+        ]
+      ]
+    },
+    {
+      "name": "rig-engineering_lying"
+    },
+    {
+      "name": "ds_mining_rig_sealed",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.5,
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.5,
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.5,
+          0.2,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ds_mining_rig_sealed_lying"
+    },
+    {
+      "name": "bio_ishi_t_lying"
+    },
+    {
+      "name": "bio_ishi_lying"
+    },
+    {
+      "name": "bio_ishi_t",
+      "directions": 4
+    },
+    {
+      "name": "bio_ishi",
+      "directions": 4
+    }
+  ]
+}

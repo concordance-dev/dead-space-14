@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 320,
+    "y": 160
+  },
+  "states": [
+    {
+      "name": "asteroidgun"
+    },
+    {
+      "name": "asteroidgun_over"
+    },
+    {
+      "name": "asteroidgun_over_fire",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "asteroidgun_map"
+    },
+    {
+      "name": "asteroidgun_firing",
+      "delays": [
+        [
+          0.03,
+          0.03,
+          0.1,
+          0.03,
+          0.03
+        ]
+      ]
+    },
+    {
+      "name": "asteroidgun_under"
+    },
+    {
+      "name": "asteroidgun_under_fire",
+      "delays": [
+        [
+          0.083,
+          0.083,
+          0.083,
+          0.083,
+          0.083,
+          0.083
+        ]
+      ]
+    }
+  ]
+}

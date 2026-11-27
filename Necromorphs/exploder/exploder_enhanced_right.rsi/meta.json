@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 54,
+    "y": 54
+  },
+  "states": [
+    {
+      "name": "torso",
+      "directions": 4
+    },
+    {
+      "name": "r_arm",
+      "directions": 4
+    },
+    {
+      "name": "head",
+      "directions": 4
+    },
+    {
+      "name": "l_arm",
+      "directions": 4
+    },
+    {
+      "name": "torso_lying"
+    },
+    {
+      "name": "r_arm_lying"
+    },
+    {
+      "name": "head_lying"
+    },
+    {
+      "name": "l_arm_lying"
+    }
+  ]
+}

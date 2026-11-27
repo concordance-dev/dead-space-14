@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "mulebot1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mulebotoff"
+    },
+    {
+      "name": "cargobot_construction1"
+    },
+    {
+      "name": "cargobot_construction2"
+    },
+    {
+      "name": "cargobot_construction3"
+    },
+    {
+      "name": "cargobot_wreck"
+    },
+    {
+      "name": "mulebot0",
+      "directions": 4
+    }
+  ]
+}

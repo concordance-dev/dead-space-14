@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "lurker"
+    },
+    {
+      "name": "puker"
+    },
+    {
+      "name": "cursed"
+    },
+    {
+      "name": "exploder"
+    },
+    {
+      "name": "enhanced_slasher"
+    },
+    {
+      "name": "spitter"
+    }
+  ]
+}

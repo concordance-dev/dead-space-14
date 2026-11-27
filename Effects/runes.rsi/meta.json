@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "blank"
+    },
+    {
+      "name": "rune-1"
+    },
+    {
+      "name": "rune-2"
+    },
+    {
+      "name": "rune-3"
+    },
+    {
+      "name": "rune-4"
+    },
+    {
+      "name": "rune-5"
+    },
+    {
+      "name": "rune-6"
+    },
+    {
+      "name": "rune-7"
+    },
+    {
+      "name": "rune-8"
+    },
+    {
+      "name": "rune-9"
+    },
+    {
+      "name": "rune-10"
+    }
+  ]
+}

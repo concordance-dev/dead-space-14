@@ -1,0 +1,26 @@
+name: Запрос на ассет
+description: Предложить добавление недостающих спрайтов или звуков по вселенной Dead Space
+labels: ["asset-request"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Тип ассета
+      options:
+        - Графика (.rsi / PNG)
+        - Звук (.ogg)
+        - Элемент интерфейса / HUD
+    validations:
+      required: true
+  - type: input
+    id: target_dir
+    attributes:
+      label: Целевой раздел
+      placeholder: Например, Weapons/, Rigs/, Audio/Weapons_And_Tools/
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание и референс из канона
+      description: Укажите название предмета/звука в играх серии Dead Space или DS13-2.0.
+    validations:
+      required: true

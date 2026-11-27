@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "edfgrunt_rig"
+    },
+    {
+      "name": "edfengie_rig"
+    },
+    {
+      "name": "edfmedic_rig"
+    },
+    {
+      "name": "edfcomm_rig"
+    },
+    {
+      "name": "unideac_rig"
+    },
+    {
+      "name": "healthbar"
+    },
+    {
+      "name": "ds_generic_rig"
+    },
+    {
+      "name": "ds_civilian_rig_slim"
+    },
+    {
+      "name": "inaprig"
+    },
+    {
+      "name": "control"
+    },
+    {
+      "name": "control-sealed",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "standard-control"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pulse_df",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "pulse_hv",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "pulse",
+      "delays": [
+        [
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "acid_large"
+    },
+    {
+      "name": "acid_small"
+    },
+    {
+      "name": "plasma_mine"
+    },
+    {
+      "name": "fireblast_blue"
+    },
+    {
+      "name": "fireblast"
+    },
+    {
+      "name": "rivet"
+    },
+    {
+      "name": "bola",
+      "directions": 4,
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "asteroidcannon"
+    },
+    {
+      "name": "javelin"
+    },
+    {
+      "name": "javelin_flight"
+    },
+    {
+      "name": "divet"
+    },
+    {
+      "name": "divet_incend"
+    },
+    {
+      "name": "divet_ap"
+    },
+    {
+      "name": "divet_hp"
+    },
+    {
+      "name": "impact_acid_1"
+    },
+    {
+      "name": "impact_acid_2"
+    },
+    {
+      "name": "impact_acid_3"
+    },
+    {
+      "name": "impact_acid_4"
+    },
+    {
+      "name": "muzzle_plasmacutter"
+    },
+    {
+      "name": "impact_plasmacutter"
+    },
+    {
+      "name": "bolter"
+    },
+    {
+      "name": "muzzle_pulse_light"
+    },
+    {
+      "name": "muzzle_pulse_hv"
+    },
+    {
+      "name": "muzzle_pulse"
+    }
+  ]
+}

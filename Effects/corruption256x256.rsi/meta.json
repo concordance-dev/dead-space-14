@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 256,
+    "y": 256
+  },
+  "states": [
+    {
+      "name": "circle"
+    },
+    {
+      "name": "cone_45"
+    },
+    {
+      "name": "cone_80"
+    },
+    {
+      "name": "cone_15"
+    }
+  ]
+}

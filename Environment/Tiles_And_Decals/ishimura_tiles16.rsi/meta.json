@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "states": [
+    {
+      "name": "blue_corner"
+    },
+    {
+      "name": "plating_corner"
+    },
+    {
+      "name": "0,0"
+    },
+    {
+      "name": "0.1"
+    }
+  ]
+}

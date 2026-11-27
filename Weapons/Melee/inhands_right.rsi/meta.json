@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "advanced",
+      "directions": 4
+    },
+    {
+      "name": "metal",
+      "directions": 4
+    },
+    {
+      "name": "titanriot",
+      "directions": 4
+    },
+    {
+      "name": "unitology_ritual_blade",
+      "directions": 4
+    },
+    {
+      "name": "cseco_hud",
+      "directions": 4
+    },
+    {
+      "name": "big_wrench1",
+      "directions": 4
+    },
+    {
+      "name": "big_wrench0",
+      "directions": 4
+    },
+    {
+      "name": "rocksaw_off",
+      "directions": 4
+    },
+    {
+      "name": "rocksaw_on",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "plasmasaw_off",
+      "directions": 4
+    },
+    {
+      "name": "plasmasaw_on",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bonecutter_off",
+      "directions": 4
+    },
+    {
+      "name": "bonecutter_on",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "plasma_saw_off",
+      "directions": 4
+    },
+    {
+      "name": "plasma_saw_on",
+      "directions": 4
+    }
+  ]
+}

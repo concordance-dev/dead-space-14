@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icechasms-0"
+    },
+    {
+      "name": "icechasms-1"
+    },
+    {
+      "name": "icechasms-2"
+    },
+    {
+      "name": "icechasms-3"
+    },
+    {
+      "name": "icechasms-4"
+    },
+    {
+      "name": "icechasms-5"
+    },
+    {
+      "name": "icechasms-6"
+    },
+    {
+      "name": "icechasms-7"
+    },
+    {
+      "name": "icechasms-8"
+    },
+    {
+      "name": "icechasms-9"
+    },
+    {
+      "name": "icechasms-10"
+    },
+    {
+      "name": "icechasms-11"
+    },
+    {
+      "name": "icechasms-12"
+    },
+    {
+      "name": "icechasms-13"
+    },
+    {
+      "name": "icechasms-14"
+    },
+    {
+      "name": "icechasms-15"
+    },
+    {
+      "name": "icechasms-21"
+    },
+    {
+      "name": "icechasms-23"
+    },
+    {
+      "name": "icechasms-29"
+    },
+    {
+      "name": "icechasms-31"
+    },
+    {
+      "name": "icechasms-38"
+    },
+    {
+      "name": "icechasms-39"
+    },
+    {
+      "name": "icechasms-46"
+    },
+    {
+      "name": "icechasms-47"
+    },
+    {
+      "name": "icechasms-55"
+    },
+    {
+      "name": "icechasms-63"
+    },
+    {
+      "name": "icechasms-74"
+    },
+    {
+      "name": "icechasms-75"
+    },
+    {
+      "name": "icechasms-78"
+    },
+    {
+      "name": "icechasms-79"
+    },
+    {
+      "name": "icechasms-95"
+    },
+    {
+      "name": "icechasms-110"
+    },
+    {
+      "name": "icechasms-111"
+    },
+    {
+      "name": "icechasms-127"
+    },
+    {
+      "name": "icechasms-137"
+    },
+    {
+      "name": "icechasms-139"
+    },
+    {
+      "name": "icechasms-141"
+    },
+    {
+      "name": "icechasms-143"
+    },
+    {
+      "name": "icechasms-157"
+    },
+    {
+      "name": "icechasms-159"
+    },
+    {
+      "name": "icechasms-175"
+    },
+    {
+      "name": "icechasms-191"
+    },
+    {
+      "name": "icechasms-203"
+    },
+    {
+      "name": "icechasms-207"
+    },
+    {
+      "name": "icechasms-223"
+    },
+    {
+      "name": "icechasms-239"
+    },
+    {
+      "name": "icechasms-255"
+    }
+  ]
+}

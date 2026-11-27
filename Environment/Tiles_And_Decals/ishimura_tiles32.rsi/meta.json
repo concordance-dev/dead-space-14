@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "iron"
+    },
+    {
+      "name": "wood2"
+    },
+    {
+      "name": "wood3"
+    },
+    {
+      "name": "plating_corner"
+    },
+    {
+      "name": "plating"
+    },
+    {
+      "name": "0,0"
+    }
+  ]
+}

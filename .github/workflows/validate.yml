@@ -1,0 +1,383 @@
+name: Validate Assets
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system and Python dependencies
+        run: |
+          if ! command -v ffprobe >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+          pip install --disable-pip-version-check pillow
+
+      - name: Validate RSI, Audio, Manifests, UI/Logo/Parallax/Fonts, Duplicates, and Docs
+        run: |
+          python3 - <<'EOF'
+          import hashlib
+          import json
+          import re
+          import subprocess
+          from concurrent.futures import ThreadPoolExecutor
+          from pathlib import Path
+          from PIL import Image
+
+          ROOT = Path(".").resolve()
+          errors = []
+
+          SPRITE_CATS = {
+              "Clothing", "Effects", "Environment", "HUDs",
+              "Items", "Necromorphs", "Rigs", "Tools", "Weapons",
+          }
+          RIG_REQUIRED = {
+              "control", "control_sealed", "suit", "suit_sealed",
+              "helmet", "helmet_sealed", "gloves", "gloves_sealed",
+              "boots", "boots_sealed",
+          }
+          STEREO_PREFIXES = (
+              "Audio/Soundtrack/",
+              "Audio/Ship_Ambience/",
+              "Audio/Dementia_And_Marker/",
+              "Audio/Story_And_Logs/",
+              "Audio/Announcements/",
+          )
+          ALLOWED_ROOT_FILES = {
+              ".gitattributes", ".gitignore", "ATTRIBUTIONS.md",
+              "CONTRIBUTING.md", "LICENSE-CODE", "LICENSE-CONTENT", "README.md",
+          }
+
+          # 1. File tree hygiene
+          for p in ROOT.rglob("*"):
+              if ".git" in p.parts or not p.is_file():
+                  continue
+              rel = p.relative_to(ROOT).as_posix()
+              top = p.relative_to(ROOT).parts[0]
+              if p.parent == ROOT:
+                  if p.name not in ALLOWED_ROOT_FILES:
+                      errors.append(f"Unexpected root file: {rel}")
+                  continue
+              if top == ".github":
+                  allowed_gh = (
+                      (rel.startswith(".github/workflows/") and p.suffix in {".yml", ".yaml"})
+                      or (rel.startswith(".github/ISSUE_TEMPLATE/") and p.suffix in {".yml", ".yaml", ".md"})
+                      or (rel.startswith(".github/pages/") and p.suffix in {".html", ".css", ".js"})
+                      or rel == ".github/PULL_REQUEST_TEMPLATE.md"
+                  )
+                  if not allowed_gh:
+                      errors.append(f"Unexpected .github file: {rel}")
+              elif top == "LobbyScreens":
+                  if p.name != "README.md" and p.suffix != ".png":
+                      errors.append(f"Unexpected LobbyScreens file: {rel}")
+              elif top == "Parallaxes":
+                  if p.name != "README.md" and p.suffix != ".png":
+                      errors.append(f"Unexpected Parallaxes file: {rel}")
+              elif top == "Logo":
+                  if p.name != "README.md" and p.suffix not in {".png", ".ico"}:
+                      errors.append(f"Unexpected Logo file: {rel}")
+              elif top == "Fonts":
+                  if p.name not in {"README.md", "LICENSE.txt", "ATTRIBUTION.txt"} and p.suffix not in {".ttf", ".otf"}:
+                      errors.append(f"Unexpected Fonts file: {rel}")
+              elif top == "Interface":
+                  in_rsi = any(part.endswith(".rsi") for part in p.parts)
+                  if p.name != "README.md" and p.suffix != ".png" and not in_rsi:
+                      errors.append(f"Unexpected Interface file: {rel}")
+              elif top == "Audio":
+                  if p.name != "README.md" and p.suffix not in {".ogg", ".json"}:
+                      errors.append(f"Unexpected Audio file: {rel}")
+              elif top in SPRITE_CATS:
+                  if p.name == "README.md":
+                      continue
+                  if rel.startswith("Environment/CEC/") and p.suffix == ".png" and not any(part.endswith(".rsi") for part in p.parts):
+                      try:
+                          with Image.open(p) as img:
+                              if img.format != "PNG":
+                                  errors.append(f"Invalid PNG in Environment/CEC: {rel}")
+                      except Exception as exc:
+                          errors.append(f"Unreadable PNG in Environment/CEC {rel}: {exc}")
+                      continue
+                  in_rsi = any(part.endswith(".rsi") for part in p.parts)
+                  if not in_rsi:
+                      errors.append(f"Stray file outside .rsi: {rel}")
+              else:
+                  errors.append(f"Unexpected top-level directory: {rel}")
+
+          # 2. LobbyScreens, Logo, Parallaxes, Interface PNGs & Fonts check
+          lobby_dir = ROOT / "LobbyScreens"
+          lobby_pngs = sorted(lobby_dir.glob("*.png")) if lobby_dir.is_dir() else []
+          if not lobby_pngs:
+              errors.append("LobbyScreens/ has no .png files")
+          for png in lobby_pngs:
+              try:
+                  with Image.open(png) as img:
+                      if img.format != "PNG" or img.size != (480, 480):
+                          errors.append(f"LobbyScreen invalid format/size {png.name}: {img.format} {img.size}")
+                      if "Description" in img.info:
+                          errors.append(f"LobbyScreen contains BYOND metadata chunk: {png.name}")
+              except Exception as exc:
+                  errors.append(f"LobbyScreen unreadable {png.name}: {exc}")
+
+          client_png_count = len(lobby_pngs)
+          for asset_root in (ROOT / "Logo", ROOT / "Parallaxes", ROOT / "Interface"):
+              if not asset_root.is_dir():
+                  errors.append(f"Missing directory: {asset_root.name}/")
+                  continue
+              for png in sorted(asset_root.rglob("*.png")):
+                  if any(part.endswith(".rsi") for part in png.parts):
+                      continue
+                  client_png_count += 1
+                  try:
+                      with Image.open(png) as img:
+                          if img.format != "PNG" or img.width <= 0 or img.height <= 0:
+                              errors.append(f"Invalid PNG {png.relative_to(ROOT)}: {img.format} {img.size}")
+                  except Exception as exc:
+                      errors.append(f"Unreadable PNG {png.relative_to(ROOT)}: {exc}")
+
+          ico = ROOT / "Logo/icon.ico"
+          if not ico.is_file() or ico.read_bytes()[:4] != b"\x00\x00\x01\x00":
+              errors.append("Missing or invalid Logo/icon.ico header")
+
+          ttf_files = sorted((ROOT / "Fonts").rglob("*.ttf")) if (ROOT / "Fonts").is_dir() else []
+          if not ttf_files:
+              errors.append("Fonts/ has no .ttf files")
+          for ttf in ttf_files:
+              hdr = ttf.read_bytes()[:4]
+              if hdr not in (b"\x00\x01\x00\x00", b"true", b"OTTO"):
+                  errors.append(f"Invalid font header: {ttf.relative_to(ROOT)}")
+
+          # Known intentional upstream variants / duplicate layers
+          KNOWN_DUP_RSIS = {
+              "Environment/Walls/bimmer_stripes_full.rsi",
+              "Necromorphs/slasher/desiccated.rsi",
+          }
+
+          # 3. RSI validation & package duplicate detection
+          rsi_dirs = sorted(p for p in ROOT.rglob("*.rsi") if ".git" not in p.parts and p.is_dir())
+          total_states = 0
+          rig_count = 0
+          rsi_pkg_hashes = {}
+          rig_icon_hashes = {}
+
+          for rsi in rsi_dirs:
+              rel_rsi = rsi.relative_to(ROOT).as_posix()
+              if any(parent.name.endswith(".rsi") for parent in rsi.parents if parent != ROOT):
+                  errors.append(f"Nested .rsi directory: {rel_rsi}")
+
+              meta_path = rsi / "meta.json"
+              if not meta_path.is_file():
+                  errors.append(f"Missing meta.json: {rel_rsi}")
+                  continue
+
+              try:
+                  meta = json.loads(meta_path.read_text(encoding="utf-8"))
+              except Exception as exc:
+                  errors.append(f"Invalid JSON in {rel_rsi}/meta.json: {exc}")
+                  continue
+
+              if meta.get("version") != 1:
+                  errors.append(f"Invalid RSI version in {rel_rsi}: {meta.get('version')}")
+
+              size = meta.get("size") or {}
+              sx, sy = size.get("x"), size.get("y")
+              if not isinstance(sx, int) or not isinstance(sy, int) or sx <= 0 or sy <= 0:
+                  errors.append(f"Invalid RSI size in {rel_rsi}: {size}")
+                  continue
+
+              states = meta.get("states")
+              if not isinstance(states, list) or not states:
+                  errors.append(f"Empty or missing states list in {rel_rsi}")
+                  continue
+
+              seen_names = set()
+              expected_pngs = set()
+              pkg_h = hashlib.sha256()
+              pkg_h.update(meta_path.read_bytes())
+
+              for st in states:
+                  name = st.get("name")
+                  if not isinstance(name, str) or not name.strip():
+                      errors.append(f"Blank state name in {rel_rsi}")
+                      continue
+                  if name in seen_names:
+                      errors.append(f"Duplicate state '{name}' in {rel_rsi}")
+                  seen_names.add(name)
+                  total_states += 1
+
+                  dirs = st.get("directions", 1)
+                  if dirs not in (1, 4, 8):
+                      errors.append(f"Invalid directions={dirs} for '{name}' in {rel_rsi}")
+                      continue
+
+                  delays = st.get("delays")
+                  frames_needed = dirs
+                  if delays is not None:
+                      if not isinstance(delays, list) or len(delays) != dirs:
+                          errors.append(f"Invalid delays count for '{name}' in {rel_rsi}")
+                          continue
+                      if not all(isinstance(d, list) and d and all(isinstance(v, (int, float)) and v > 0 for v in d) for d in delays):
+                          errors.append(f"Invalid delays values for '{name}' in {rel_rsi}")
+                          continue
+                      frames_needed = sum(len(d) for d in delays)
+
+                  png_path = rsi / f"{name}.png"
+                  expected_pngs.add(f"{name}.png")
+                  if not png_path.is_file():
+                      errors.append(f"Missing state PNG: {rel_rsi}/{name}.png")
+                      continue
+                  pkg_h.update(png_path.read_bytes())
+                  try:
+                      with Image.open(png_path) as img:
+                          w, h = img.size
+                      if w % sx != 0 or h % sy != 0:
+                          errors.append(f"Unaligned PNG {w}x{h} (tile {sx}x{sy}): {rel_rsi}/{name}.png")
+                      elif (w // sx) * (h // sy) < frames_needed:
+                          errors.append(f"Insufficient frames in {rel_rsi}/{name}.png: {(w // sx) * (h // sy)} < {frames_needed}")
+                  except Exception as exc:
+                      errors.append(f"Unreadable PNG {rel_rsi}/{name}.png: {exc}")
+
+              for child in rsi.iterdir():
+                  if child.name == "meta.json":
+                      continue
+                  if child.name not in expected_pngs:
+                      errors.append(f"Orphan entry inside RSI {rel_rsi}: {child.name}")
+
+              digest = pkg_h.hexdigest()
+              parts = rsi.relative_to(ROOT).parts
+              if parts[0] != "Rigs" and rel_rsi not in KNOWN_DUP_RSIS:
+                  if digest in rsi_pkg_hashes:
+                      errors.append(f"Duplicate non-Rig RSI package: {rel_rsi} == {rsi_pkg_hashes[digest]}")
+                  else:
+                      rsi_pkg_hashes[digest] = rel_rsi
+
+              if len(parts) == 3 and parts[0] == "Rigs" and rsi.name == "icons.rsi":
+                  rig_count += 1
+                  if digest in rig_icon_hashes:
+                      errors.append(f"Duplicate Rig icons.rsi: {rel_rsi} == {rig_icon_hashes[digest]}")
+                  else:
+                      rig_icon_hashes[digest] = rel_rsi
+                  missing = sorted(RIG_REQUIRED - seen_names)
+                  if missing:
+                      errors.append(f"Rig {rel_rsi} missing required states: {missing}")
+
+          # 4. Audio validation via ffprobe + SHA-256 & decoded PCM MD5 duplicate check
+          oggs = sorted((ROOT / "Audio").rglob("*.ogg"))
+
+          def check_ogg(ogg_path):
+              rel = ogg_path.relative_to(ROOT).as_posix()
+              expected_ch = 2 if rel.startswith(STEREO_PREFIXES) else 1
+              digest = hashlib.sha256(ogg_path.read_bytes()).hexdigest()
+              res = subprocess.run(
+                  [
+                      "ffprobe", "-v", "error", "-select_streams", "a:0",
+                      "-show_entries", "stream=codec_name,sample_rate,channels",
+                      "-of", "json", str(ogg_path),
+                  ],
+                  capture_output=True, text=True, check=False,
+              )
+              if res.returncode != 0:
+                  return rel, digest, None, f"ffprobe failed on {rel}: {res.stderr.strip()}"
+              try:
+                  streams = json.loads(res.stdout).get("streams", [])
+                  st = streams[0]
+              except Exception:
+                  return rel, digest, None, f"No audio stream in {rel}"
+              if st.get("codec_name") != "vorbis":
+                  return rel, digest, None, f"Codec != vorbis ({st.get('codec_name')}) in {rel}"
+              if str(st.get("sample_rate")) != "44100":
+                  return rel, digest, None, f"Sample rate != 44100 ({st.get('sample_rate')}) in {rel}"
+              if st.get("channels") != expected_ch:
+                  return rel, digest, None, f"Channels {st.get('channels')} != expected {expected_ch} in {rel}"
+              pcm_res = subprocess.run(
+                  ["ffmpeg", "-v", "error", "-i", str(ogg_path), "-f", "md5", "-"],
+                  capture_output=True, text=True, check=False,
+              )
+              if pcm_res.returncode != 0 or not pcm_res.stdout.strip():
+                  return rel, digest, None, f"ffmpeg PCM md5 failed on {rel}: {pcm_res.stderr.strip()}"
+              pcm_md5 = pcm_res.stdout.strip()
+              return rel, digest, pcm_md5, None
+
+          ogg_hashes = {}
+          pcm_hashes = {}
+          with ThreadPoolExecutor(max_workers=8) as pool:
+              for rel, digest, pcm_md5, err in pool.map(check_ogg, oggs):
+                  if err:
+                      errors.append(err)
+                  if digest in ogg_hashes:
+                      errors.append(f"Duplicate OGG content: {rel} == {ogg_hashes[digest]}")
+                  else:
+                      ogg_hashes[digest] = rel
+                  if pcm_md5:
+                      if pcm_md5 in pcm_hashes:
+                          errors.append(f"Duplicate decoded PCM audio: {rel} == {pcm_hashes[pcm_md5]}")
+                      else:
+                          pcm_hashes[pcm_md5] = rel
+
+          # 5. Manifests validation
+          def extract_ogg_strings(obj):
+              if isinstance(obj, str) and obj.endswith(".ogg"):
+                  yield obj
+              elif isinstance(obj, list):
+                  for item in obj:
+                      yield from extract_ogg_strings(item)
+              elif isinstance(obj, dict):
+                  for val in obj.values():
+                      yield from extract_ogg_strings(val)
+
+          for manifest_rel, base_dir in [
+              ("Audio/ai_voice_manifest.json", ROOT),
+              ("Audio/russian_studio_manifest.json", ROOT),
+              ("Audio/ishimura_ai_manifest.json", ROOT / "Audio/Announcements/Ishimura_AI_RU"),
+          ]:
+              mp = ROOT / manifest_rel
+              if not mp.is_file():
+                  errors.append(f"Missing manifest: {manifest_rel}")
+                  continue
+              data = json.loads(mp.read_text(encoding="utf-8"))
+              for ref in extract_ogg_strings(data):
+                  if not (base_dir / ref).is_file():
+                      errors.append(f"Broken ref in {manifest_rel}: {ref}")
+
+          # 6. Documentation & markdown links
+          emoji_re = re.compile(r"[\U0001F300-\U0001FAFF\u2600-\u27BF]")
+          link_re = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
+          md_files = sorted(
+              p for p in ROOT.rglob("*.md")
+              if ".git" not in p.parts
+          )
+          for md in md_files:
+              rel = md.relative_to(ROOT).as_posix()
+              raw = md.read_bytes()
+              if b"\r\n" in raw:
+                  errors.append(f"CRLF line endings in {rel}")
+              text = raw.decode("utf-8")
+              if emoji_re.search(text):
+                  errors.append(f"Emoji detected in {rel}")
+              if "file://" in text:
+                  errors.append(f"Local file:// URI in {rel}")
+              for target in link_re.findall(text):
+                  if target.startswith(("http://", "https://", "mailto:", "#")):
+                      continue
+                  clean = target.split("#")[0]
+                  if clean and not (md.parent / clean).exists():
+                      errors.append(f"Broken relative link in {rel}: {target}")
+
+          print(f"Summary: {len(rsi_dirs)} RSIs, {total_states} states, {rig_count} rigs, {len(oggs)} OGGs, {client_png_count} PNGs, {len(ttf_files)} TTFs, {len(md_files)} MDs")
+          if errors:
+              print(f"Validation FAILED with {len(errors)} error(s):")
+              for e in errors[:50]:
+                  print(" -", e)
+              raise SystemExit(1)
+          print("Validation PASSED cleanly.")
+          EOF

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "plasmacutter"
+    },
+    {
+      "name": "ripper"
+    },
+    {
+      "name": "ripper_100",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ripper_75",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ripper_50",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ripper_25",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ripper_0",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "divet_example_loaded"
+    },
+    {
+      "name": "divet"
+    },
+    {
+      "name": "divet_mag"
+    },
+    {
+      "name": "divet_bolt"
+    },
+    {
+      "name": "divet_bolt_locked"
+    },
+    {
+      "name": "divet_spec_example_loaded"
+    },
+    {
+      "name": "divet_spec"
+    },
+    {
+      "name": "divet_spec_mag"
+    },
+    {
+      "name": "divet_spec_bolt"
+    },
+    {
+      "name": "divet_spec_bolt_locked"
+    },
+    {
+      "name": "hrrevolver"
+    },
+    {
+      "name": "hrrevolver_empty"
+    },
+    {
+      "name": "hrrevolvertitan"
+    },
+    {
+      "name": "hrrevolvertitan_empty"
+    }
+  ]
+}

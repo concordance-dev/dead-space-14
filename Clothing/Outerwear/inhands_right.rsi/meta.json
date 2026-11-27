@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bio_ishi",
+      "directions": 4
+    },
+    {
+      "name": "cseco_jacket",
+      "directions": 4
+    },
+    {
+      "name": "pcsi",
+      "directions": 4
+    },
+    {
+      "name": "tactical",
+      "directions": 4
+    },
+    {
+      "name": "cecvest",
+      "directions": 4
+    },
+    {
+      "name": "titan_suit",
+      "directions": 4
+    },
+    {
+      "name": "titan_colonel_suit",
+      "directions": 4
+    }
+  ]
+}

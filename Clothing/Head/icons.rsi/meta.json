@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bio_ishi"
+    },
+    {
+      "name": "engiewelding"
+    },
+    {
+      "name": "engieweldingup"
+    },
+    {
+      "name": "titan_helmet"
+    },
+    {
+      "name": "titan_colonel_helmet"
+    },
+    {
+      "name": "edfgrunt"
+    },
+    {
+      "name": "edfengie"
+    },
+    {
+      "name": "edfmedic"
+    },
+    {
+      "name": "edfcomm"
+    },
+    {
+      "name": "unideac"
+    },
+    {
+      "name": "unifaith"
+    },
+    {
+      "name": "unizerk"
+    },
+    {
+      "name": "unimedic"
+    },
+    {
+      "name": "uniengie"
+    },
+    {
+      "name": "pcsicap"
+    },
+    {
+      "name": "pcsicap_flipped"
+    },
+    {
+      "name": "helmet_pcsi"
+    },
+    {
+      "name": "helmet_tactical"
+    },
+    {
+      "name": "bio_black"
+    },
+    {
+      "name": "bio_white"
+    },
+    {
+      "name": "beret_cseco"
+    },
+    {
+      "name": "clergy"
+    },
+    {
+      "name": "helmet"
+    },
+    {
+      "name": "helmet-flight"
+    },
+    {
+      "name": "helmet-flight-on"
+    },
+    {
+      "name": "firstlieutenant"
+    },
+    {
+      "name": "capcap"
+    },
+    {
+      "name": "retro_command_beret"
+    }
+  ]
+}

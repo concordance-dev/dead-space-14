@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "concordance-dev / Dead Space 14",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "stasis_bolt",
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
+    },
+    {
+      "name": "stasis_impact",
+      "delays": [
+        [
+          0.06,
+          0.06,
+          0.07,
+          0.08,
+          0.09
+        ]
+      ]
+    },
+    {
+      "name": "stasis_field",
+      "delays": [
+        [
+          0.14,
+          0.14,
+          0.14,
+          0.14
+        ]
+      ]
+    },
+    {
+      "name": "kinesis_beam",
+      "directions": 4,
+      "delays": [
+        [
+          0.08,
+          0.08
+        ],
+        [
+          0.08,
+          0.08
+        ],
+        [
+          0.08,
+          0.08
+        ],
+        [
+          0.08,
+          0.08
+        ]
+      ]
+    }
+  ]
+}

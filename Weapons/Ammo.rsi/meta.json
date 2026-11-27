@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pulse_rounds_hv"
+    },
+    {
+      "name": "pulse_rounds_hv-50"
+    },
+    {
+      "name": "pulse_rounds_hv-0"
+    },
+    {
+      "name": "pulse_rounds_df"
+    },
+    {
+      "name": "pulse_rounds_df-50"
+    },
+    {
+      "name": "pulse_rounds_df-0"
+    },
+    {
+      "name": "pulse_rounds"
+    },
+    {
+      "name": "pulse_rounds-50"
+    },
+    {
+      "name": "pulse_rounds-0"
+    },
+    {
+      "name": "darts-5"
+    },
+    {
+      "name": "darts"
+    },
+    {
+      "name": "darts-4"
+    },
+    {
+      "name": "darts-3"
+    },
+    {
+      "name": "darts-2"
+    },
+    {
+      "name": "darts-1"
+    },
+    {
+      "name": "darts-0"
+    },
+    {
+      "name": "seeker-0"
+    },
+    {
+      "name": "seeker-1"
+    },
+    {
+      "name": "seeker-2"
+    },
+    {
+      "name": "seeker-3"
+    },
+    {
+      "name": "seeker-4"
+    },
+    {
+      "name": "seeker-5"
+    },
+    {
+      "name": "seeker-6"
+    },
+    {
+      "name": "seeker-example"
+    },
+    {
+      "name": "divet_slug"
+    },
+    {
+      "name": "divet_slug-12"
+    },
+    {
+      "name": "divet_slug-0"
+    },
+    {
+      "name": "divet_hp"
+    },
+    {
+      "name": "divet_hp-12"
+    },
+    {
+      "name": "divet_hp-0"
+    },
+    {
+      "name": "divet_ap"
+    },
+    {
+      "name": "divet_ap-12"
+    },
+    {
+      "name": "divet_ap-0"
+    },
+    {
+      "name": "divet_incind"
+    },
+    {
+      "name": "divet_incind-12"
+    },
+    {
+      "name": "divet_incind-0"
+    },
+    {
+      "name": "divet_rb"
+    },
+    {
+      "name": "divet_rb-12"
+    },
+    {
+      "name": "divet_rb-0"
+    },
+    {
+      "name": "divet_ext_slug"
+    },
+    {
+      "name": "divet_ext_slug-24"
+    },
+    {
+      "name": "divet_ext_slug-0"
+    },
+    {
+      "name": "divet_exp_slug"
+    },
+    {
+      "name": "divet_exp_slug-48"
+    },
+    {
+      "name": "divet_exp_slug-0"
+    },
+    {
+      "name": "sawblade"
+    },
+    {
+      "name": "diamondblade"
+    },
+    {
+      "name": "bullpup-20"
+    },
+    {
+      "name": "bullpup-16"
+    },
+    {
+      "name": "bullpup-12"
+    },
+    {
+      "name": "bullpup-8"
+    },
+    {
+      "name": "bullpup-4"
+    },
+    {
+      "name": "bullpup-0"
+    },
+    {
+      "name": "ripper_blades"
+    },
+    {
+      "name": "diamond_blades"
+    },
+    {
+      "name": "forcebattery"
+    },
+    {
+      "name": "fb-100"
+    },
+    {
+      "name": "fb-80"
+    },
+    {
+      "name": "fb-60"
+    },
+    {
+      "name": "fb-40"
+    },
+    {
+      "name": "fb-20"
+    },
+    {
+      "name": "contact_energy"
+    },
+    {
+      "name": "line_racks"
+    },
+    {
+      "name": "line_rack"
+    },
+    {
+      "name": "linegun_rounds_empty"
+    },
+    {
+      "name": "universal_ammo"
+    },
+    {
+      "name": "heavy_pulse_rounds"
+    },
+    {
+      "name": "heavy_pulse_rounds_empty"
+    },
+    {
+      "name": "hydecanister"
+    },
+    {
+      "name": "hydecanister_e"
+    },
+    {
+      "name": "shotgun_magazine"
+    },
+    {
+      "name": "javelin-0"
+    },
+    {
+      "name": "javelin-1"
+    },
+    {
+      "name": "javelin-2"
+    },
+    {
+      "name": "javelin-3"
+    },
+    {
+      "name": "javelin-4"
+    },
+    {
+      "name": "javelin-5"
+    },
+    {
+      "name": "javelin-6"
+    },
+    {
+      "name": "bolt_charged"
+    },
+    {
+      "name": "seeker"
+    },
+    {
+      "name": "javelin_bolt"
+    },
+    {
+      "name": "rivet"
+    },
+    {
+      "name": "rivet-16"
+    },
+    {
+      "name": "rivet-0"
+    },
+    {
+      "name": "javelin"
+    }
+  ]
+}

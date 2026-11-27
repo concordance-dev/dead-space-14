@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "unitology"
+    },
+    {
+      "name": "lunchbox_egov"
+    },
+    {
+      "name": "lunchbox_scaf"
+    },
+    {
+      "name": "lunchbox_cec"
+    },
+    {
+      "name": "lunchbox_unit"
+    },
+    {
+      "name": "crate_ds_blue1"
+    },
+    {
+      "name": "crate_ds_blue2"
+    },
+    {
+      "name": "crate_ds_blue3"
+    },
+    {
+      "name": "crate_ds_blue4"
+    },
+    {
+      "name": "crate_ds_green1"
+    },
+    {
+      "name": "crate_ds_green2"
+    },
+    {
+      "name": "crate_ds_green3"
+    },
+    {
+      "name": "crate_ds_green4"
+    }
+  ]
+}

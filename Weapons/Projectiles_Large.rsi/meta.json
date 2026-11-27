@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "linecutter"
+    },
+    {
+      "name": "linecutter_right"
+    },
+    {
+      "name": "linecutter_left"
+    },
+    {
+      "name": "linecutter_48"
+    },
+    {
+      "name": "linecutter_32"
+    }
+  ]
+}

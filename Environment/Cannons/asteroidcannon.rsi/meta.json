@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 160,
+    "y": 128
+  },
+  "states": [
+    {
+      "name": "asteroidgun"
+    },
+    {
+      "name": "asteroidgun_over"
+    },
+    {
+      "name": "asteroidgun_map"
+    },
+    {
+      "name": "asteroidgun_firing",
+      "delays": [
+        [
+          0.03,
+          0.03,
+          0.03,
+          0.03,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

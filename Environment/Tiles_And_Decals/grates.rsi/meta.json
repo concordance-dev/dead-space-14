@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "grating_center_c"
+    },
+    {
+      "name": "grating_center_r"
+    },
+    {
+      "name": "grating_line_r1",
+      "directions": 4
+    },
+    {
+      "name": "grating_line_r2",
+      "directions": 4
+    },
+    {
+      "name": "grating_line_r3",
+      "directions": 4
+    },
+    {
+      "name": "grating_line_r4",
+      "directions": 4
+    },
+    {
+      "name": "grating_line_r5",
+      "directions": 4
+    },
+    {
+      "name": "free"
+    }
+  ]
+}

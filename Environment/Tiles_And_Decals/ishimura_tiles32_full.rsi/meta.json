@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "0,0"
+    },
+    {
+      "name": "1,0"
+    },
+    {
+      "name": "2,0"
+    },
+    {
+      "name": "3,0"
+    },
+    {
+      "name": "4,0"
+    },
+    {
+      "name": "0,1"
+    },
+    {
+      "name": "1,1"
+    },
+    {
+      "name": "2,1"
+    },
+    {
+      "name": "3,1"
+    },
+    {
+      "name": "plating"
+    }
+  ]
+}

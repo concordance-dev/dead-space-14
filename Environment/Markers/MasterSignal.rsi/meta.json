@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 46,
+    "y": 46
+  },
+  "states": [
+    {
+      "name": "mastersignal_light"
+    },
+    {
+      "name": "mastersignal"
+    }
+  ]
+}

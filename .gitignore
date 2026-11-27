@@ -1,0 +1,13 @@
+# OS and Editor metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Python cache / scratch scripts
+__pycache__/
+*.py[cod]
+*$py.class
+*.tmp
+*.bak

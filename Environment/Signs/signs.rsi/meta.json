@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "cec_red"
+    },
+    {
+      "name": "cec_ominous"
+    },
+    {
+      "name": "cec_purple"
+    },
+    {
+      "name": "cec_cyan"
+    },
+    {
+      "name": "cec_blue"
+    },
+    {
+      "name": "cec_orange"
+    },
+    {
+      "name": "plaque_empty"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bio_ishi",
+      "directions": 4
+    },
+    {
+      "name": "bio_black",
+      "directions": 4
+    },
+    {
+      "name": "bio_white",
+      "directions": 4
+    },
+    {
+      "name": "engieweldingup",
+      "directions": 4
+    },
+    {
+      "name": "engiewelding",
+      "directions": 4
+    },
+    {
+      "name": "titan_helmet",
+      "directions": 4
+    },
+    {
+      "name": "titan_colonel_helmet",
+      "directions": 4
+    },
+    {
+      "name": "clergy",
+      "directions": 4
+    },
+    {
+      "name": "edfgrunt",
+      "directions": 4
+    },
+    {
+      "name": "edfengie",
+      "directions": 4
+    },
+    {
+      "name": "edfmedic",
+      "directions": 4
+    },
+    {
+      "name": "edfcomm",
+      "directions": 4
+    },
+    {
+      "name": "unifaith",
+      "directions": 4
+    },
+    {
+      "name": "uniengie",
+      "directions": 4
+    },
+    {
+      "name": "unizerk",
+      "directions": 4
+    },
+    {
+      "name": "unimedic",
+      "directions": 4
+    },
+    {
+      "name": "unideac",
+      "directions": 4
+    },
+    {
+      "name": "pcsicap",
+      "directions": 4
+    },
+    {
+      "name": "pcsicap_flipped",
+      "directions": 4
+    },
+    {
+      "name": "helmet_pcsi",
+      "directions": 4
+    },
+    {
+      "name": "helmet_tactical",
+      "directions": 4
+    },
+    {
+      "name": "beret_cseco",
+      "directions": 4
+    },
+    {
+      "name": "helmet",
+      "directions": 4
+    },
+    {
+      "name": "helmet-flight",
+      "directions": 4
+    },
+    {
+      "name": "helmet-flight-on",
+      "directions": 4
+    },
+    {
+      "name": "firstlieutenant",
+      "directions": 4
+    },
+    {
+      "name": "capcap",
+      "directions": 4
+    },
+    {
+      "name": "retro_command_beret",
+      "directions": 4
+    }
+  ]
+}

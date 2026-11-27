@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ds_miner"
+    },
+    {
+      "name": "cargo_jumpsuit"
+    },
+    {
+      "name": "ds_director"
+    },
+    {
+      "name": "ds_mechanic"
+    },
+    {
+      "name": "titansec"
+    },
+    {
+      "name": "clergy"
+    },
+    {
+      "name": "jumpsuit_v2"
+    },
+    {
+      "name": "medic_jumpsuit"
+    },
+    {
+      "name": "ds_bridgeensign"
+    },
+    {
+      "name": "ds_firstlieutenant_old"
+    },
+    {
+      "name": "ds_captain_old"
+    },
+    {
+      "name": "ds_chief_sci_officer"
+    },
+    {
+      "name": "ds_senior_med_officer"
+    },
+    {
+      "name": "ds_research_assistant"
+    },
+    {
+      "name": "cargo_old"
+    },
+    {
+      "name": "ds_hydro_bot"
+    },
+    {
+      "name": "ds_med_doctor"
+    },
+    {
+      "name": "ds_chemist"
+    },
+    {
+      "name": "ds_securityjumpsuit"
+    },
+    {
+      "name": "ds_cseco"
+    },
+    {
+      "name": "ds_securityjumpsuit_old"
+    },
+    {
+      "name": "ds_engineer"
+    },
+    {
+      "name": "kellion_jumpsuit"
+    },
+    {
+      "name": "kellion_lead"
+    },
+    {
+      "name": "kellion_tech"
+    },
+    {
+      "name": "ds_engineer_old"
+    },
+    {
+      "name": "ds_rigsuit_old"
+    },
+    {
+      "name": "rdalt"
+    },
+    {
+      "name": "ds_flightdeck"
+    },
+    {
+      "name": "ds_rigsuit"
+    },
+    {
+      "name": "ds_captain_retro"
+    },
+    {
+      "name": "ds_firstlieutenant_retro"
+    },
+    {
+      "name": "ds_bridgeensign_retro"
+    },
+    {
+      "name": "ds_captain"
+    },
+    {
+      "name": "ds_firstlieutenant"
+    }
+  ]
+}

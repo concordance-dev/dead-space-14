@@ -1,0 +1,43 @@
+name: Package Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build asset archive
+        run: |
+          python3 - <<'EOF'
+          import os, zipfile
+          from pathlib import Path
+
+          tag = os.environ["GITHUB_REF_NAME"]
+          out_dir = Path(os.environ.get("RUNNER_TEMP", "/tmp"))
+          archive = out_dir / f"dead-space-14-{tag}.zip"
+          root = Path(".").resolve()
+          exclude_top = {".git", ".github"}
+
+          files = [
+              p for p in sorted(root.rglob("*"))
+              if p.is_file() and p.relative_to(root).parts[0] not in exclude_top
+          ]
+          with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
+              for p in files:
+                  zf.write(p, p.relative_to(root).as_posix())
+          print(f"Built {archive} ({archive.stat().st_size} bytes, {len(files)} files)")
+          EOF
+
+      - name: Upload archive to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload "${GITHUB_REF_NAME}" "${RUNNER_TEMP}/dead-space-14-${GITHUB_REF_NAME}.zip" --clobber

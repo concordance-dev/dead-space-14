@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "puker",
+      "directions": 4
+    },
+    {
+      "name": "torso",
+      "directions": 4
+    },
+    {
+      "name": "l_arm",
+      "directions": 4
+    },
+    {
+      "name": "r_arm",
+      "directions": 4
+    },
+    {
+      "name": "l_leg",
+      "directions": 4
+    },
+    {
+      "name": "r_leg",
+      "directions": 4
+    },
+    {
+      "name": "head",
+      "directions": 4
+    }
+  ]
+}

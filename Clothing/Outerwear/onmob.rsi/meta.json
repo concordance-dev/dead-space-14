@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "infector",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          5,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          5,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          5,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          5,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "unideac",
+      "directions": 4
+    },
+    {
+      "name": "unifaith",
+      "directions": 4
+    },
+    {
+      "name": "unimedic",
+      "directions": 4
+    },
+    {
+      "name": "unizerk",
+      "directions": 4
+    },
+    {
+      "name": "uniengie",
+      "directions": 4
+    },
+    {
+      "name": "csecojacket",
+      "directions": 4
+    },
+    {
+      "name": "csecojacket_t",
+      "directions": 4
+    },
+    {
+      "name": "titan_suit",
+      "directions": 4
+    },
+    {
+      "name": "titan_colonel_suit",
+      "directions": 4
+    },
+    {
+      "name": "edfcomm",
+      "directions": 4
+    },
+    {
+      "name": "edfgrunt",
+      "directions": 4
+    },
+    {
+      "name": "edfengie",
+      "directions": 4
+    },
+    {
+      "name": "edfmedic",
+      "directions": 4
+    },
+    {
+      "name": "kellion_grunt",
+      "directions": 4
+    },
+    {
+      "name": "kelliontech_jacket",
+      "directions": 4
+    },
+    {
+      "name": "kelliontech_t",
+      "directions": 4
+    },
+    {
+      "name": "cec_vest",
+      "directions": 4
+    },
+    {
+      "name": "clergy",
+      "directions": 4
+    },
+    {
+      "name": "clergy_t",
+      "directions": 4
+    },
+    {
+      "name": "bio_ishi",
+      "directions": 4
+    },
+    {
+      "name": "bio_ishi_t",
+      "directions": 4
+    },
+    {
+      "name": "bio_black",
+      "directions": 4
+    },
+    {
+      "name": "bio_black_t",
+      "directions": 4
+    },
+    {
+      "name": "bio_white",
+      "directions": 4
+    },
+    {
+      "name": "bio_white_t",
+      "directions": 4
+    },
+    {
+      "name": "cargojacket",
+      "directions": 4
+    },
+    {
+      "name": "cargojacket_t",
+      "directions": 4
+    },
+    {
+      "name": "pcsi",
+      "directions": 4
+    }
+  ]
+}

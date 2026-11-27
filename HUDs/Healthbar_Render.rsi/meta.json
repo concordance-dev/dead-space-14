@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 181,
+    "y": 24
+  },
+  "states": [
+    {
+      "name": "graphic"
+    },
+    {
+      "name": "health"
+    },
+    {
+      "name": "backdrop"
+    },
+    {
+      "name": "example_render"
+    },
+    {
+      "name": "health_black"
+    },
+    {
+      "name": "health_vibrant_red"
+    },
+    {
+      "name": "health_sickly"
+    },
+    {
+      "name": "health_grayscale"
+    },
+    {
+      "name": "health_1"
+    },
+    {
+      "name": "health_2"
+    },
+    {
+      "name": "health_3"
+    },
+    {
+      "name": "health_4"
+    },
+    {
+      "name": "health_5"
+    },
+    {
+      "name": "health_6"
+    },
+    {
+      "name": "alpha_mask"
+    }
+  ]
+}
